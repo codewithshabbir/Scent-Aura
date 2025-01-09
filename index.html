@@ -3,13 +3,417 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Scent Aura</title>
+    
+    <title>Document</title>
 </head>
 <body>
-    <header></header>
-    <main></main>
-    <footer></footer>
+    <div class="flex flex-col h-screen">
+        <header class="w-full h-40 bg-black flex flex-col text-center px-5">
+            <div class="">
+                <p class="font-bold text-white">Free shipping on orders above Rs 3,000</p>
+            </div>
+            <hr class="text-white flex justify-center text-center items-center mx-auto p-2 w-1/2">
+            <div class="flex flex-row justify-between items-center">
+                <div class="flex flex-row rounded-full gap-2">
+                    <div class="flex flex-row rounded-full overflow-hidden p-2 bg-white">
+                        <input type="search" name="" id="" placeholder="Search" class="">
+                        <img src="icon/search.png" class="bg-white w-10 h-10" alt="">
+                    </div>
+                </div>
+                <div>
+                    <img src="icon/Scents_N_Stories_New_logo_-_White_-_PNG.avif" class="h-16" alt="">
+                </div>
+                <div class="flex flex-row text-center items-center gap-2">
+                    <img src="icon/user.png" class="w-10 h-10 cursor-pointer" alt="">
+                    <a href="" class="font-bold text-white">Account</a>
+                    <img src="icon/add.png" class="w-10 h-10 cursor-pointer" alt="">
+                    <a href="" class="font-bold text-white">Add to cart</a>
+                </div>
+            </div>
+            <ul class="flex flex-row justify-center items-center gap-10 my-5 text-center text-white font-bold">
+                <li><a href="">SHOP</a></li>
+                <li><a href="">WEEKLY DEALS</a></li>
+                <li><a href="">LESS THEN 1500</a></li>
+                <li><a href="">ATTARS</a></li>
+                <li><a href="">GIFT SETS</a></li>
+                <li><a href="">BLOGS</a></li>
+                <li><a href="">CONTACT</a></li>
+            </ul>
+        </header>
+        <img src="banner/Banner_3200x1000_copy_e24afee5-b1ef-4bce-a8f8-7f3bbd25a5f9.webp" alt="">
+    </div>
+    <div class="h-28 px-5">
+        <h1 class="font-bold text-4xl">SCENTED GIFTS</h1>
+        <hr class="my-5">
+    </div>
 
-    <script src="./main.js"></script>
+    <div class="flex flex-row justify-between gap-5 px-5">
+        <div class="flex flex-col w-52 bg-black rounded-lg left-0 top-0 text-white p-5">
+            <div>
+                <h1 class="font-bold">Gender</h1>
+                <div>
+                    <input type="checkbox" name="" id="Men">
+                    <label for="Men">Men</label>
+                </div>
+                <div>
+                    <input type="checkbox" name="" id="Women">
+                    <label for="Women">Women</label>
+                </div>
+            </div>
+
+            <div>
+                <h1 class="font-bold">Genre</h1>
+                <div>
+                    <input type="checkbox" name="" id="Arabic">
+                    <label for="Arabic">Arabic</label>
+                </div>
+                <div>
+                    <input type="checkbox" name="" id="French">
+                    <label for="French">French</label>
+                </div>
+            </div>
+
+            <div>
+                <h1 class="font-bold">Type</h1>
+                <div>
+                    <input type="checkbox" name="" id="Citrus">
+                    <label for="Citrus">Citrus(38)</label>
+                </div>
+                <div>
+                    <input type="checkbox" name="" id="Floral">
+                    <label for="Floral">Floral(19)</label>
+                </div>
+                <div>
+                    <input type="checkbox" name="" id="Fruity">
+                    <label for="Fruity">Fruity(24)</label>
+                </div>
+                <div>
+                    <input type="checkbox" name="" id="Green">
+                    <label for="Green">Green(13)</label>
+                </div>
+                <div>
+                    <input type="checkbox" name="" id="Oriental">
+                    <label for="Oriental">Oriental(54)</label>
+                </div>
+                <div>
+                    <input type="checkbox" name="" id="Sweet">
+                    <label for="Sweet">Sweet(1)</label>
+                </div>
+                <div>
+                    <input type="checkbox" name="" id="Woody">
+                    <label for="Woody">Woody(54)</label>
+                </div>
+            </div>
+
+
+            <div>
+                <h1 class="font-bold">Season</h1>
+                <div>
+                    <input type="checkbox" name="" id="Summer">
+                    <label for="Summer">Summer(75)</label>
+                </div>
+                <div>
+                    <input type="checkbox" name="" id="Winter">
+                    <label for="Winter">Winter(62)</label>
+                </div>
+                <div>
+                    <input type="checkbox" name="" id="Autumn">
+                    <label for="Autumn">Autumn(74)</label>
+                </div>
+                <div>
+                    <input type="checkbox" name="" id="Spring">
+                    <label for="Spring">Spring(75)</label>
+                </div>
+            </div>
+
+
+            <div>
+                <h1 class="font-bold">Sillage / Projection</h1>
+                <div>
+                    <input type="checkbox" name="" id="Strong">
+                    <label for="Strong">Strong(40)</label>
+                </div>
+                <div>
+                    <input type="checkbox" name="" id="Light">
+                    <label for="Light">Light(6)</label>
+                </div>
+                <div>
+                    <input type="checkbox" name="" id="Medium">
+                    <label for="Medium">Medium(50)</label>
+                </div>
+            </div>
+
+
+            <div>
+                <h1 class="font-bold">Lasting</h1>
+                <div>
+                    <input type="checkbox" name="lasting" id="hrs4">
+                    <label for="hrs4">Upto 4 hrs (5)</label>
+                </div>
+                <div>
+                    <input type="checkbox" name="lasting" id="hrs7">
+                    <label for="hrs7">Upto 7 hrs (32)</label>
+                </div>
+                <div>
+                    <input type="checkbox" name="lasting" id="hrs12">
+                    <label for="hrs12">Upto 12 hrs (42)</label>
+                </div>
+                <div>
+                    <input type="checkbox" name="lasting" id="hrs24">
+                    <label for="hrs24">Upto 24 hrs (9)</label>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="pics flex flex-row flex-wrap gap-5 relative right-0">
+            <div class="bg-slate-100 p-5 h-96 rounded-lg">
+                <img src="images/1st.webp" class="w-48  rounded-lg" alt="">
+                <p class="font-bold ">iqbal</p>
+                <p class="font-bold ">The Poet's Fragnance</p>
+                <span class="font-bold text-xl text-red-600">Rs.4,290</span>
+            </div>
+            <div class="bg-slate-100 p-5 h-96 rounded-lg">
+                <img src="images/2nd.jpg" class="w-48  rounded-lg" alt="">
+                <p class="font-bold ">Catch 22 - Gold Edition</p>
+                <p class="font-bold ">The Premium Gold Fragrance</p>
+                <span class="font-bold text-xl text-red-600">Rs.3,550</span>
+            </div>
+            <div class="bg-slate-100 p-5 h-96 rounded-lg">
+                <img src="images/3rd.webp" class="w-48  rounded-lg" alt="">
+                <p class="font-bold ">Couple Perfume Gift Set</p>
+                <p class="font-bold ">For The Most Lovely Duo| Couple</p>
+                <p class="font-bold text-xl text-red-600">Rs.3,990 <span class="line-through text-sm">Rs.4,380</span></p>
+            </div>
+            <div class="bg-slate-100 p-5 h-96 rounded-lg">
+                <img src="images/4th.webp" class="w-48  rounded-lg" alt="">
+                <p class="font-bold ">Catch 22</p>
+                <p class="font-bold ">Our #1 Best Seller 🏆</p>
+                <p class="text-xs">from <span class="font-bold text-xl text-red-600">Rs.1,790</span></p>
+            </div>
+            <div class="bg-slate-100 p-5 h-96 rounded-lg">
+                <img src="images/5th.webp" class="w-48  rounded-lg" alt="">
+                <p class="font-bold ">Merry Me</p>
+                <p class="font-bold ">#1 Women's Best-Seller 🏆</p>
+                <p class="text-xs">from <span class="font-bold text-xl text-red-600">Rs.1,690</span></p>
+            </div>
+            <div class="bg-slate-100 p-5 h-96 rounded-lg">
+                <img src="images/6th.webp" class="w-48  rounded-lg" alt="">
+                <p class="font-bold ">Lady Eve</p>
+                <p class="font-bold ">The Most Nostalgic Scent</p>
+                <span class="font-bold text-xl text-red-600">Rs.1,550</span>
+            </div>
+            <div class="bg-slate-100 p-5 h-96 rounded-lg">
+                <img src="images/7th.webp" class="w-48  rounded-lg" alt="">
+                <p class="font-bold ">Best Gift for Girls</p>
+                <p class="font-bold ">Double the Gift| Women</p>
+                <p class="font-bold text-xl text-red-600">Rs.3,530 <span class="line-through text-sm">Rs.3,800</span></p>
+            </div>
+            <div class="bg-slate-100 p-5 h-96 rounded-lg">
+                <img src="images/8th.webp" class="w-48  rounded-lg" alt="">
+                <p class="font-bold ">Cross My Heart</p>
+                <p class="font-bold ">The Most Noticeable Scent!</p>
+                <span class="font-bold text-xl text-red-600">Rs.4,290</span>
+            </div>
+            <div class="bg-slate-100 p-5 h-96 rounded-lg">
+                <img src="images/9th.webp" class="w-48  rounded-lg" alt="">
+                <p class="font-bold ">Best Gift for Boys</p>
+                <p class="font-bold ">Double The Gift| Men</p>
+                <span class="font-bold text-xl text-red-600">Rs.4,290</span>
+            </div>
+            <div class="bg-slate-100 p-5 h-96 rounded-lg">
+                <img src="images/10th.webp" class="w-48  rounded-lg" alt="">
+                <p class="font-bold ">Smash My Head (EDP)</p>
+                <p class="font-bold ">Our Top Rated Perfume ⭐</p>
+                <span class="font-bold text-xl text-red-600">Rs.4,290</span>
+            </div>
+            <div class="bg-slate-100 p-5 h-96 rounded-lg">
+                <img src="images/11th.webp" class="w-48  rounded-lg" alt="">
+                <p class="font-bold ">Living Floral Body Mist (150ml)</p>
+                <p class="font-bold ">Women’s Favorite Floral Mist</p>
+                <span class="font-bold text-xl text-red-600">Rs.4,290</span>
+            </div>
+            <div class="bg-slate-100 p-5 h-96 rounded-lg">
+                <img src="images/12th.webp" class="w-48  rounded-lg" alt="">
+                <p class="font-bold ">Undeclared Love</p>
+                <p class="font-bold ">Best Selling Floral Perfume</p>
+                <span class="font-bold text-xl text-red-600">Rs.4,290</span>
+            </div>
+            <div class="bg-slate-100 p-5 h-96 rounded-lg">
+                <img src="images/13th.webp" class="w-48  rounded-lg" alt="">
+                <p class="font-bold ">Rabt</p>
+                <p class="font-bold ">Top Woody Spicy Fragrance</p>
+                <span class="font-bold text-xl text-red-600">Rs.4,290</span>
+            </div>
+            <div class="bg-slate-100 p-5 h-96 rounded-lg">
+                <img src="images/14th.webp" class="w-48  rounded-lg" alt="">
+                <p class="font-bold ">Make My Day</p>
+                <p class="font-bold ">2nd Best Selling Floral Oriental Perfume</p>
+                <span class="font-bold text-xl text-red-600">Rs.4,290</span>
+            </div>
+            <div class="bg-slate-100 p-5 h-96 rounded-lg">
+                <img src="images/15th.webp" class="w-48  rounded-lg" alt="">
+                <p class="font-bold ">Junoon</p>
+                <p class="font-bold ">Best Selling Leather Perfume</p>
+                <span class="font-bold text-xl text-red-600">Rs.4,290</span>
+            </div>
+            <div class="bg-slate-100 p-5 h-96 rounded-lg">
+                <img src="images/16th.webp" class="w-48  rounded-lg" alt="">
+                <p class="font-bold ">Qurb</p>
+                <p class="font-bold ">A touch of sophistication</p>
+                <span class="font-bold text-xl text-red-600">Rs.4,290</span>
+            </div>
+            <div class="bg-slate-100 p-5 h-96 rounded-lg">
+                <img src="images/17th.webp" class="w-48  rounded-lg" alt="">
+                <p class="font-bold ">Tipping Point</p>
+                <p class="font-bold ">Our #1 Office Wear! 👔</p>
+                <span class="font-bold text-xl text-red-600">Rs.4,290</span>
+            </div>
+            <div class="bg-slate-100 p-5 h-96 rounded-lg">
+                <img src="images/18th.webp" class="w-48  rounded-lg" alt="">
+                <p class="font-bold ">Saiful Malook</p>
+                <p class="font-bold ">Most Popular Aquatic Scent!</p>
+                <span class="font-bold text-xl text-red-600">Rs.4,290</span>
+            </div>
+            <div class="bg-slate-100 p-5 h-96 rounded-lg">
+                <img src="images/19th.webp" class="w-48  rounded-lg" alt="">
+                <p class="font-bold ">Florse</p>
+                <p class="font-bold ">Our Best Floral Fragranc</p>
+                <span class="font-bold text-xl text-red-600">Rs.4,290</span>
+            </div>
+            <div class="bg-slate-100 p-5 h-96 rounded-lg">
+                <img src="images/20th.webp" class="w-48  rounded-lg" alt="">
+                <p class="font-bold ">The Legend</p>
+                <p class="font-bold ">Finest Classical - Modern Combo</p>
+                <span class="font-bold text-xl text-red-600">Rs.4,290</span>
+            </div>
+            <div class="bg-slate-100 p-5 h-96 rounded-lg">
+                <img src="images/21th.webp" class="w-48  rounded-lg" alt="">
+                <p class="font-bold ">Inferno</p>
+                <p class="font-bold ">Our Best Oud Fragrance</p>
+                <span class="font-bold text-xl text-red-600">Rs.4,290</span>
+            </div>
+            <div class="bg-slate-100 p-5 h-96 rounded-lg">
+                <img src="images/22th.webp" class="w-48  rounded-lg" alt="">
+                <p class="font-bold ">Da Vinci Code</p>
+                <p class="font-bold ">A gentleman's favorite!</p>
+                <span class="font-bold text-xl text-red-600">Rs.4,290</span>
+            </div>
+            <div class="bg-slate-100 p-5 h-96 rounded-lg">
+                <img src="images/23th.webp" class="w-48  rounded-lg" alt="">
+                <p class="font-bold ">In Your Eyes</p>
+                <p class="font-bold ">Our Best Party Wear 🕴️</p>
+                <span class="font-bold text-xl text-red-600">Rs.4,290</span>
+            </div>
+            <div class="bg-slate-100 p-5 h-96 rounded-lg">
+                <img src="images/24th.webp" class="w-48  rounded-lg" alt="">
+                <p class="font-bold ">In My Dreams</p>
+                <p class="font-bold ">Best Selling Green Perfume</p>
+                <span class="font-bold text-xl text-red-600">Rs.4,290</span>
+            </div>
+            <div class="bg-slate-100 p-5 h-96 rounded-lg">
+                <img src="images/25th.webp" class="w-48  rounded-lg" alt="">
+                <p class="font-bold ">Dauntless</p>
+                <p class="font-bold ">World's 2nd Best Selling DNA</p>
+                <span class="font-bold text-xl text-red-600">Rs.4,290</span>
+            </div>
+            <div class="bg-slate-100 p-5 h-96 rounded-lg">
+                <img src="images/26th.webp" class="w-48  rounded-lg" alt="">
+                <p class="font-bold ">Rain On Me</p>
+                <p class="font-bold ">2nd Best Selling Aquatic Perfume</p>
+                <span class="font-bold text-xl text-red-600">Rs.4,290</span>
+            </div>
+            <div class="bg-slate-100 p-5 h-96 rounded-lg">
+                <img src="images/27th.webp" class="w-48  rounded-lg" alt="">
+                <p class="font-bold ">Melt Me</p>
+                <p class="font-bold ">The All-Rounder Perfume</p>
+                <span class="font-bold text-xl text-red-600">Rs.4,290</span>
+            </div>
+            <div class="bg-slate-100 p-5 h-96 rounded-lg">
+                <img src="images/28th.webp" class="w-48  rounded-lg" alt="">
+                <p class="font-bold ">Near You</p>
+                <p class="font-bold ">Top Choice for Gifting 🎁</p>
+                <span class="font-bold text-xl text-red-600">Rs.4,290</span>
+            </div>
+            <div class="bg-slate-100 p-5 h-96 rounded-lg">
+                <img src="images/29th.webp" class="w-48  rounded-lg" alt="">
+                <p class="font-bold ">Living Floral</p>
+                <p class="font-bold ">Most Awarded Women's Fragrance!</p>
+                <span class="font-bold text-xl text-red-600">Rs.4,290</span>
+            </div>
+            <div class="bg-slate-100 p-5 h-96 rounded-lg">
+                <img src="images/30th.webp" class="w-48  rounded-lg" alt="">
+                <p class="font-bold ">Love Letters</p>
+                <p class="font-bold ">Women's All-Rounder!</p>
+                <span class="font-bold text-xl text-red-600">Rs.4,290</span>
+            </div>
+            <div class="bg-slate-100 p-5 h-96 rounded-lg">
+                <img src="images/31th.webp" class="w-48  rounded-lg" alt="">
+                <p class="font-bold ">Romantic Coffee</p>
+                <p class="font-bold ">Our Best Selling Signature Fragrance</p>
+                <span class="font-bold text-xl text-red-600">Rs.4,290</span>
+            </div>
+            <div class="bg-slate-100 p-5 h-96 rounded-lg">
+                <img src="images/32th.webp" class="w-48  rounded-lg" alt="">
+                <p class="font-bold ">Million Worlds</p>
+                <p class="font-bold ">World's Best Seller DNA</p>
+                <span class="font-bold text-xl text-red-600">Rs.4,290</span>
+            </div>
+            <div class="bg-slate-100 p-5 h-96 rounded-lg">
+                <img src="images/33th.webp" class="w-48  rounded-lg" alt="">
+                <p class="font-bold ">Atlantis</p>
+                <p class="font-bold ">Perfect Every-Day Scent</p>
+                <span class="font-bold text-xl text-red-600">Rs.4,290</span>
+            </div>
+            <div class="bg-slate-100 p-5 h-96 rounded-lg">
+                <img src="images/34th.webp" class="w-48  rounded-lg" alt="">
+                <p class="font-bold ">Into the Sun</p>
+                <p class="font-bold ">Most Admired Perfume</p>
+                <span class="font-bold text-xl text-red-600">Rs.4,290</span>
+            </div>
+            <div class="bg-slate-100 p-5 h-96 rounded-lg">
+                <img src="images/35th.webp" class="w-48  rounded-lg" alt="">
+                <p class="font-bold ">Umeed</p>
+                <p class="font-bold ">Perfect for Nights Out</p>
+                <span class="font-bold text-xl text-red-600">Rs.1,220</span>
+            </div>
+            <div class="bg-slate-100 p-5 h-96 rounded-lg">
+                <img src="images/36th.webp" class="w-48  rounded-lg" alt="">
+                <p class="font-bold ">Lost Light</p>
+                <p class="font-bold ">Second Best Floral Fragrance 🏆</p>
+                <span class="font-bold text-xl text-red-600">Rs.1,690</span>
+            </div>
+            <div class="bg-slate-100 p-5 h-96 rounded-lg">
+                <img src="images/37th.webp" class="w-48  rounded-lg" alt="">
+                <p class="font-bold ">Heavenly Vibes</p>
+                <p class="font-bold ">Best White Floral Scent</p>
+                <span class="font-bold text-xl text-red-600">Rs.1,650</span>
+            </div>
+            <div class="bg-slate-100 p-5 h-96 rounded-lg">
+                <img src="images/38th.webp" class="w-48  rounded-lg" alt="">
+                <p class="font-bold ">Night Love</p>
+                <p class="font-bold ">Most Under-Rated Women's Fragrance</p>
+                <span class="font-bold text-xl text-red-600">Rs.1,550</span>
+            </div>
+            <div class="bg-slate-100 p-5 h-96 rounded-lg">
+                <img src="images/39th.webp" class="w-48  rounded-lg" alt="">
+                <p class="font-bold ">Crossroads</p>
+                <p class="font-bold ">Most Popular Leather Fragrance</p>
+                <span class="font-bold text-xl text-red-600">Rs.1,790</span>
+            </div>
+            <div class="bg-slate-100 p-5 h-96 rounded-lg">
+                <img src="images/40th.webp" class="w-48  rounded-lg" alt="">
+                <p class="font-bold ">Into Eternity</p>
+                <p class="font-bold ">Most Awarded Men's Fragrance!</p>
+                <span class="font-bold text-xl text-red-600">Rs.1,390</span>
+            </div>
+        </div>
+
+    </div>
+
+
+    
+
+    <script src="https://cdn.tailwindcss.com"></script>
 </body>
 </html>
