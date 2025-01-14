@@ -8,3 +8,27 @@ body{
     background-size: cover;
     background-repeat: no-repeat;
 }
+.cool{
+    position: relative;
+    overflow: hidden;
+}
+.btn{
+    position: absolute;
+    top: 0;
+    right: -100%;
+}
+.cool:hover .btn{
+    right: 0;
+    transition: 0.5s;
+}
+
+.btn button{
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+    background: #ff0000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} 
+
