@@ -1030,7 +1030,467 @@
         </div>
       </div>      
     </footer>
+   
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+ 
+  <!-- Code Added by Faisal Siddiqi  -->
+  
+  <div class="Navbar flex flex-col sm:flex-row justify-between bg-black h-40 w-full max-w-[1010px] mx-auto p-4">
+    <p class="head text-white text-3xl mt-[-30px] font-bold italic sm:ml-[400px] sm:pt-16 text-center sm:text-left">ScentsNStories</p>
     
+    <!-- Search bar -->
+    <input class="search rounded-3xl h-10 w-full lg:mt-[35px] sm:w-48 text-justify sm:ml-[-550px] sm:mt-[55px] pl-4 pb-1" type="search" placeholder="Search">
+    
+    <!-- Hamburger Menu (Visible on smaller screens) -->
+    <div class="flex items-center justify-end mt-4">
+        <button class="text-white text-3xl lg:hidden md:hidden lg-block" id="hamburger-icon" onclick="toggleMenu()">&#9776;</button>
+    </div>
+
+    <!-- Menu (Visible on larger screens or when toggled on small screens) -->
+    <ul  id="menu" class="flex flex-col mt-[100px] lg:flex-row text-center text-black  md:lg:text-white  
+    sm:ml-[-100px] lg:flex md:inline hidden text-sm  sm:mt-[120px] gap-8 sm:gap-12 sm:text-sm">
+        <li>SHOP</li>
+        <li>WEEKLY DEALS</li>
+        <li>LESS THAN 1500</li>
+        <li>ATTARS</li>
+        <li>GIFT SETS</li>
+        <li>BLOGS</li>
+        <li>CONTACT</li>
+    </ul>    
+</div>
+
+
+
+<!-- JavaScript to toggle menu on smaller screens -->
+<script>
+    function toggleMenu() {
+        const Menu = document.getElementById('menu');
+        // Menu.style.visibility('collapse'); // Toggle the "hidden" class on the menu
+        Menu.classList.toggle('hidden')
+        // menu.classList.value="flex flex-col item-center justify-end"
+    }
+</script>
+
+<button class="scent-bot  mt-[360px] ml-[850px] px-8 py-3 bg-red-600 rounded-full text-white font-bold fixed">Scent Bot</button>
+
+
+<div class="Acc-cart h-4 w-full sm:w-auto gap-16 flex justify-end sm:text-sm mt-4 lg:mt-[-100px] sm:mt-[-90px] text-white">
+    <span>ACCOUNT</span>
+    <span class="cart mr-12 ">CART</span>
+</div>
+
+<hr class="hx bg-gray-800 lg:mt-[-40px] sm:mt-0">
+<hr class="hx bg-blue-400 lg:mt-[65px]">
+
+<div class="container flex flex-col sm:flex-row h-[900px] w-full sm:w-100% mt-80 lg:mt-20 border-2 border-red-400">
+    
+    <div class="thumbnail flex flex-col sm:w-[20%] sm:border-2 sm:border-blue-400 mb-4 sm:mb-0">
+        <img class="thumb-1 mx-auto sm:ml-16 border-2 border-black" src="./intoeternity_30_11zon.webp" height="100px" width="60px"> 
+        <img class="thumb-2 mx-auto sm:ml-16 mt-12" src="./intoeternity-50ml.webp" height="100px" width="60px"> 
+    </div>
+
+    <div class="prod-img flex bg-white h-[600px] w-full sm:w-[40%] border-2 border-green-400">
+        <img src="./intoeternity_30_11zon.webp" class="w-full" height="100px">
+    </div>
+
+    <div class="prod-desc bg-white h-[900px] w-full sm:w-[60%] border-2 border-yellow-400">
+        <span class="text text-4xl ml-16 font-bold mt-[200px]">INTO ETERNITY</span>
+        <span class="reviews flex text-red-400 ml-16 mt-8"><span class="img flex"><img src="./pngtree-star-vector-icon-png-image_696411.jpg" height="20" width="20" alt="star">
+            <img src="./pngtree-star-vector-icon-png-image_696411.jpg" height="20" width="20" alt="star">
+            <img src="./pngtree-star-vector-icon-png-image_696411.jpg" height="20" width="20" alt="star">
+            <img src="./pngtree-star-vector-icon-png-image_696411.jpg" height="20" width="20" alt="star">
+            <img src="./pngtree-star-vector-icon-png-image_696411.jpg" height="20" width="20" alt="star">
+        
+        </span> 10 reviews</span>
+        <p class="award text-gray-400 ml-16">Most Awarded Men's Fragrance!</p>
+        <p class="format font-bold ml-16 mt-8">Format</p>
+        <p class="perfume50 w-full sm:w-48 border-2 border-black mt-4 p-2 ml-16 text-gray-400 text-center">Perfume Spray (50ml)</p>
+        <p class="price font-bold ml-16 mt-8">Price</p>
+        <p class="Rs text-red-400 text-xl ml-16 mt-4">Rs. 1,390</p>
+
+        <p class="quantity font-bold ml-16 mt-8">Quantity</p>
+
+        <p class="w-16 h-10 border-2 border-gray-200 mt-4 p-2 ml-16 text-gray-700 text-center">- 1 +</p>
+        <p class="return text-gray-700 ml-20 mt-4">15 Days Easy Returns</p>
+        <p class="return text-gray-700 ml-20 mt-2">Surprise in Every Order</p>
+        <p class="return text-gray-700 ml-20 mt-2">Award Winning Fragrance Brand</p>
+        <p class="gift font-bold mt-4 ml-16">Is it a gift?</p>
+        <p class="NO w-16 h-8 bg-gray-300 font-bold text-xs ml-16 border-2 rounded-full"><img class="img-no ml-[2px] mt-[2px] bg-gray-400 rounded-full" src="./NO.png" height="27" width="27"></p>
+        <p class="return text-gray-700 text-sm font-underlined ml-16">Tax included.<span class="ship underline"> Shipping</span> calculated at checkout.</p>
+
+        <p class="Cart flex h-12 ml-16 mt-4 font-bold text-center border-1 border-black border rounded-3xl px-24 py-3 justify-center items-center">Add to Cart</p>
+        <p class="Cart flex bg-red-600 h-12 ml-16 mt-2 font-bold text-center text-white border-1 border-black border rounded-3xl px-24 py-3 justify-center items-center">Buy Now!</p>
+
+        <p class="free ml-16 mt-8 pb-4 border-b-8 rounded-md mr-8 border-gray-600 font-bold"><span class="free-only">Free shipping for orders over Rs.999!</span></p>
+    </div>
+</div>
+
+<p class="brief-head bg-gray-400 w-[600px] mt-[850px] lg:mt-20 mx-auto border-2 p-2 font-bold text-xl text-center rounded-tl-3xl">BRIEF</p>
+<div class="para w-[600px] border-2 px-8 leading-8 mx-auto text-xl">
+    <p class="start-para mt-4">Into Eternity is an aromatic fougere fragrance for men...</p>
+    <p class="top-notes mt-8">The top notes include lavender, bergamot, mandarin orange and lemon...</p>
+    <p class="find text-red-600 mt-8">To find out which famous perfumes it is most similar to...</p>
+    <p class="concnt mt-8"><span class="concent font-bold">Concentration:</span> 30% (Eau De Parfum)</p>
+    <p><span class="concent font-bold">Sillage: </span>Medium</p>
+    <p><span class="concent font-bold">Lasting upto:</span> 4 hours</p>
+</div>
+
+<div class="shipping text-xl ml-52 mr-52 mt-12 mb-12 font-bold">
+    <span class="ship-inf-text w-full lg:w-[400px]">Shipping Information <button class="v font-bold ml-[380px]  absolute">v</button></span>
+    
+    <hr>
+</div>
+
+<div class="Unboxing text-xl ml-52 mr-52 mt-4 mb-12 font-bold">Unboxing Happiness</div>
+<hr class="hr ml-52 w-[600px]">
+
+<div class="video mt-12 ml-28">
+    <iframe class="iframe border-2 border-blue-400 ml-20 w-full sm:w-[620px]" height="350" src="https://www.youtube.com/embed/a2EQbG52IYs" title="Unboxing Happiness | Scents N Stories" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+</div>
+
+<div class="reviews mt-40 ml-20 h-full w-60">
+    <p class="review-head w-full sm:w-[480px] text-2xl text-center border-b-8 border-black">REVIEWS</p>
+    <p class="quest-head w-full sm:w-[420px] ml-0 sm:ml-[450px] mr-20 mt-[-40px] text-2xl text-center border-b-8 border-gray-300">QUESTIONS</p>
+</div>
+
+<span class="rating flex font-bold text-center text-4xl mt-8 ml-16 sm:ml-[380px]">4.9/5<span class="star flex gap-1 ml-2">
+    <img src="./pngtree-star-vector-icon-png-image_696411.jpg" height="10" width="25" alt="star">
+    <img src="./pngtree-star-vector-icon-png-image_696411.jpg" height="10" width="25" alt="star">
+    <img src="./pngtree-star-vector-icon-png-image_696411.jpg" height="10" width="25" alt="star">
+    <img src="./pngtree-star-vector-icon-png-image_696411.jpg" height="10" width="25" alt="star">
+    
+</span>
+
+
+
+</span>
+<p class="10 mt-2 ml-[410px] ">Based on 10 Reviews</p>
+
+<input class="Searchbox h-10 w-full sm:w-[350px] ml-16 mt-12 pl-12 border-2 rounded-lg" type="search" placeholder="Search for name or content">
+<button class="btn-review mt-8 lg:mt-12 ml-[60px] lg:ml-[180px] lg:px-2 lg:w-[350px] py-2 px-20 mx-auto w-full font-bold text-xl bg-black text-white rounded-lg absolute">Write a Review</button> 
+<p class="rev-5 mt-20 ml-16 text-xl absolute">Showing 5 Reviews</p>
+
+<span class="filter mt-40 pl-16 pr-4 py-2 ml-[410px] border-2 rounded-xl bg-gray-200 absolute">Sort</span>
+<span class="sort mt-40 pl-16 pr-4 py-2 ml-[250px] border-2 rounded-xl bg-gray-200 absolute">Filters</span>
+
+<div class="clients-reviews flex mt-40  w-[100%] ">
+<div class="client-name flex flex-col w-[30%] h-40  border-r-2">
+
+
+    <p class="4m ml-16">Umair S.</p>
+<p class="4m ml-16 mt-8 text-sm">Age Group 18-34</p>
+<p class="4m ml-16 text-sm">Gender: Male</p>
+
+
+</div>
+<div class="client-review flex flex-col w-[70%] h-40 ">
+<span class="4m ml-8 flex">
+
+    <span class="flex "> 
+    <img src="./pngtree-star-vector-icon-png-image_696411.jpg" height="10" width="25" alt="star">
+    <img src="./pngtree-star-vector-icon-png-image_696411.jpg" height="10" width="25" alt="star">
+    <img src="./pngtree-star-vector-icon-png-image_696411.jpg" height="10" width="25" alt="star">
+    <img src="./pngtree-star-vector-icon-png-image_696411.jpg" height="10" width="25" alt="star">
+    4 months ago
+    </span>    
+    
+</span>
+
+
+<p class="Lxry ml-8 mt-4 font-bold">Luxury Fragrance</p>
+<p class="long-comment ml-8 mt-4 mr-20 text-sm ">The fragrance of this perfume is very different (unique) top notes are little bit annoying but middle and lower notes are just Booooooom, Wao it is a luxury perfume 100% recommend
+</p>
+
+</div>
+
+</div>
+<br>
+<hr class="hr w-[88%] ml-16  border-2">
+
+
+
+<div class="clients-reviews flex mt-10  w-[100%] ">
+        <div class="client-name flex flex-col w-[30%] h-40  border-r-2">
+        
+        
+            <p class="4m ml-16">Wahid K.</p>
+        
+        
+        
+        </div>
+        <div class="client-review flex flex-col w-[70%] h-40 ">
+            <span class="flex ml-8"> 
+                <img src="./pngtree-star-vector-icon-png-image_696411.jpg" height="10" width="25" alt="star">
+                <img src="./pngtree-star-vector-icon-png-image_696411.jpg" height="10" width="25" alt="star">
+                <img src="./pngtree-star-vector-icon-png-image_696411.jpg" height="10" width="25" alt="star">
+                <img src="./pngtree-star-vector-icon-png-image_696411.jpg" height="10" width="25" alt="star">
+                1 year ago
+                </span> 
+        <p class="Lxry ml-8 mt-4 font-bold">Best</p>
+        <p class="long-comment ml-8 mt-4 text-sm mr-20">hi this is best perfume</p>
+        
+        </div>
+        
+        </div>
+
+        <br>
+        <hr class="hr w-[88%] ml-16  border-2">
+        
+
+        <div class="clients-reviews flex mt-10  w-[100%] ">
+                <div class="client-name flex flex-col w-[30%] h-40  border-r-2">
+                
+                
+                    <p class="4m ml-16">Sanaullah M.</p>
+                
+                
+                
+                </div>
+                <div class="client-review flex flex-col w-[70%] h-40 ">
+                    <span class="flex ml-8"> 
+                        <img src="./pngtree-star-vector-icon-png-image_696411.jpg" height="10" width="25" alt="star">
+                        <img src="./pngtree-star-vector-icon-png-image_696411.jpg" height="10" width="25" alt="star">
+                        <img src="./pngtree-star-vector-icon-png-image_696411.jpg" height="10" width="25" alt="star">
+                        <img src="./pngtree-star-vector-icon-png-image_696411.jpg" height="10" width="25" alt="star">
+                        2 years ago
+                        </span> 
+                <p class="Lxry ml-8 mt-4 font-bold">Get me</p>
+                <p class="long-comment ml-8 mt-4 text-sm mr-20">Nice</p>
+                
+                </div>
+                
+                </div>
+        
+                <br>
+                <hr class="hr w-[88%] ml-16  border-2">
+                
+                <div class="clients-reviews flex mt-10  w-[100%] ">
+                        <div class="client-name flex flex-col w-[30%] h-40  border-r-2">
+                        
+                        
+                            <p class="4m ml-16">Wahid K.</p>
+                        
+                        
+                        
+                        </div>
+                        <div class="client-review flex flex-col w-[70%] h-40 ">
+                            <span class="flex ml-8"> 
+                                <img src="./pngtree-star-vector-icon-png-image_696411.jpg" height="10" width="25" alt="star">
+                                <img src="./pngtree-star-vector-icon-png-image_696411.jpg" height="10" width="25" alt="star">
+                                <img src="./pngtree-star-vector-icon-png-image_696411.jpg" height="10" width="25" alt="star">
+                                <img src="./pngtree-star-vector-icon-png-image_696411.jpg" height="10" width="25" alt="star">
+                                2 years ago
+                                </span>
+
+
+                        <p class="Lxry ml-8 mt-4 font-bold">Amazing</p>
+                        <p class="long-comment ml-8 mt-4 text-sm mr-20">Very nice flowery scent.
+
+                            </p>
+                        
+                        </div>
+                        
+                        </div>
+
+                        <br>
+<hr class="hr w-[88%] ml-16  border-2">
+
+
+                        <div class="clients-reviews flex mt-10  w-[100%] ">
+                                <div class="client-name flex flex-col w-[30%] h-40  border-r-2">
+                                
+                                
+                                    <p class="4m ml-16">Wahid K.</p>
+                                
+                                
+                                
+                                </div>
+                                <div class="client-review flex flex-col w-[70%] h-40 ">
+                                <span class="flex ml-8"> 
+                        <img src="./pngtree-star-vector-icon-png-image_696411.jpg" height="10" width="25" alt="star">
+                        <img src="./pngtree-star-vector-icon-png-image_696411.jpg" height="10" width="25" alt="star">
+                        <img src="./pngtree-star-vector-icon-png-image_696411.jpg" height="10" width="25" alt="star">
+                        <img src="./pngtree-star-vector-icon-png-image_696411.jpg" height="10" width="25" alt="star">
+                        2 years ago
+                        </span>
+                                <p class="Lxry ml-8 mt-4 font-bold">Amazing</p>
+                                <p class="long-comment ml-8 mt-4 text-sm mr-20">It exact copy of eternity and has good lasting.</p>
+                                
+                                </div>
+                                
+                                </div>
+
+
+                                <br>
+                                <hr class="hr w-[88%] ml-16  border-2">
+                                
+<button class="btn-showmore mt-8 py-1 px-4 text-sm rounded-sm border-gray-500 ml-[450px] border-2 ">SHOW MORE</button>
+
+<p class="freq-head ml-12 mt-40 text-2xl text-black font-bold ">FREQUENTLY BOUGHT TOGETHER</p>
+
+<div class="pic-box-2 flex space-around mt-[50px] w-[100%] h-[300px] bg-white ml-[20px] gap-4 ">
+    <img src="./Atlantiscopy_2_11zon.webp" class="w-[230px] h-[330px] rounded-sm ">
+    <img src="./intoeternity_1917c8ea-d7a3-4853-8f05-637f2425454a.webp" class="w-[230px] h-[330px] rounded-sm ">
+    <img src="./sandcity_64_11zon.webp" class="w-[230px] h-[330px] rounded-sm ">
+    <img src="./thebeast_72_11zon.webp" class="w-[230px] h-[330px] rounded-sm ">
+    
+    <span  class="mt-[350px] ml-[30px] absolute "><b>Atlantis</b></span>
+    <span class="mt-[375px] ml-[30px] absolute text-gray-500 "><b>Perfect Every day Scent</b></span>
+    
+    <span class="mt-[410px] text-lg ml-[30px] absolute text-red-400"><b>Rs.1,480</b></span>
+
+    
+
+    <span class="mt-[350px] ml-[270px] absolute text-black "><b>Into Eternity Roll On</b></span>
+    <span class="mt-[375px] ml-[270px] absolute text-black "><b>(10 ML)</b></span>
+    <span class="mt-[400px] ml-[270px] absolute text-gray-400 "><b>Most Awarded Men's</b></span>
+    <span class="mt-[425px] ml-[270px] absolute text-gray-400 "><b>Fragrance</b></span>
+    <span class="mt-[460px] ml-[270px] absolute text-lg text-red-400"><b>Rs.750</b></span>
+    
+    <span class="mt-[350px] ml-[530px] absolute text-black "><b>Sand City</b></span>
+    <span class="mt-[375px] ml-[530px] absolute text-gray-400  "><b>Legendary Men's</b></span>
+    <span class="mt-[400px] ml-[530px] absolute text-gray-400 "><b>Perfume</b></span>
+    
+    <span class="mt-[430px] ml-[530px] absolute text-red-400 text-lg"><b>Rs.1,490</b></span>
+
+
+    
+    <span class="mt-[350px] ml-[780px] absolute text-black  "><b>The Beast</b></span>
+    <span class="mt-[380px] ml-[780px] absolute text-gray-400 "><b>For Musk Lovers</b></span>
+    
+    <span class="mt-[410px] ml-[780px] absolute text-red-400 text-lg"><b>Rs.4,290</b></span>
+
+
+    
+</div>
+
+
+
+
+<hr class="hr mt-80 border-1">
+
+<div class="img-3 flex mt-20 gap-12 ml-16">    
+
+<div>
+        <img class="Oud rounded-t-full" src="./Arch_for_Oud_Fest.webp" height="300" width="250">
+
+        <p class="fest mt-4 ml-20 text-xl font-bold ">OUD FEST</p>
+        
+        <P class="best-fragr text-center text-black w-64"  >Get the best fragrances in town at discounted prices & not miss a single update with these Deals.</P>
+        
+
+</div>
+
+<div>
+        <img class="Oud rounded-t-full" src="./Impression_blog.webp" height="300" width="250">
+
+        <p class="fest mt-4 ml-4 w-48 text-center text-xl font-bold ">FAMOUS PERFUME DNA'S
+            </p>
+        
+        <P class="best-fragr text-center text-black w-64">Looking for famous perfume DNAs? Find which of your favorite scents are similar to!
+
+            </P>
+        
+
+</div>
+
+<div>
+        <img class="Oud rounded-t-full" src="./Attar_blog.webp" height="300" width="250">
+
+        <p class="fest mt-4 ml-4 w-48 text-center text-xl font-bold ">BEST ATTAR FRAGRANCES
+            </p>
+        
+        <P class="best-fragr text-center text-black w-64">You are an absolute Attar fan? Then you'll love these attar fragrances for sure, so don’t miss!
+
+            </P>
+        
+
+</div>
+
+
+
+
+
+
+
+</div>
+
+
+<hr class="hr mt-20 border-1">
+
+
+<div class="info-reg  flex h-[80px]  mt-12  ml-12 mr-12">
+<p class="offer w-[680px] ml-8 mt-6 font-bold  ">Let's keep in touch ! Get email offers & the latest news from us</p>    
+<div class="subscribe flex mt-5 w-[600px] h-16">
+<input type="text" placeholder="Enter your Email" class="email-text mt-2 ml-12 p-2 pr-4 border-gray-200 border-2">
+<button class="Subs-btn bg-red-700 h-14 mt-2 text-white  px-8 font-bold border-2 rounded-r-full">Subscribe</button>
+</div>
+</div>
+
+
+<hr class="hr mt-20 border-1">
+<div class="footer flex mt-20 w-full h-[700px] border-2 bg-black">
+<p class="Partner h-20 w-[140px] mt-32 ml-20 text-white text-center font-bold ">OFFICIAL SCENT PARTNER</p>
+<ul class="footer-list text-white mt-8 ml-16 leading-8 text-sm ">
+    <li class="footer-about  "><b>ABOUT</b></li>
+    <li class="faqs mt-2"><b>FAQs</b></li>
+    <li><b>Our Story</b></li>
+    <li><b>Media Page</b></li>
+    <li><b>Quiz</b></li>
+    <li><b>Our New Logo</b></li>
+    <li><b>Careers / Jobs</b></li>
+    
+    <li class="touch mt-8 "><b>GET IN TOUCH</b></li>
+    <li class="ph mt-2"><b>+92 311 100 7862</b></li>
+    <li><b>Email us</b></li>
+    <li class="follow mt-4 "><b>Follow us</b></li>
+    <li><b>All Icons</b></li>
+    <li><b>Other Icons</b></li>
+</ul>
+
+<ul class="footer-list text-white mt-8 ml-20 leading-8 text-sm gap-12">
+    <li class="footer-about  "><b>SUPPORT</b></li>
+    <li class="form mt-2"><b>Return Form</b></li>
+    <li><b>Privacy Policy</b></li>
+    <li><b>Shipping Policy</b></li>
+    <li><b>Terms of Service</b></li>
+    <li><b>track Your Order</b></li>
+    
+    
+</ul>
+
+<ul class="footer-list text-white mt-8 ml-20 leading-8 text-sm ">
+    <li class="footer-about "><b>QUICK LINKS</b></li>
+    <li class="gold mt-2"><b>Gold Membership</b></li>
+    <li><b>Ast For A Perfume</b></li>
+    <li><b>Bulk / Customize Orders</b></li>
+    <li><b>Own a Franchise</b></li>
+    <li><b>Store Locator</b></li>
+    
+   
+</ul>
+
+
+</div>
+<img class="visa mt-[-380px] ml-[520px]" src="./Visa.jpg" alt="visa" height="80" width="100">
+<img class=" ml-[625px] mt-[-50px]" src="./Master-card.jpg" alt="visa" height="80" width="100">
+<hr class="hr mt-56 ">
+
+
+<p class="rights mt-10 text-white text-center ">© 2025 Scents N Stories Pvt Ltd. support@scentsnstories.pk</p>
+
+
+
 
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="./assets/js/main.js"></script>
