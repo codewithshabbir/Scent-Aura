@@ -1,5 +1,5 @@
 export const Products = [
-    // For Man Categoty.....
+  // For Man Categoty.....
   {
     Name: "Catch 22",
     imgUrl: "./assets/images/products/Catch22copy_6_11zon.jpeg",
@@ -44,11 +44,12 @@ export const Products = [
     Description:
       "Near You is a woody aquatic fragrance for men. The top notes consist of cypress, bergamot, mandarin, yuzu, clary sage, verbena, coriander and tarragon. The heart notes include  saffron, nutmeg, water lily, geranium and cinnamon. The base notes are tobacco, amber, musk, cypriol, sandalwood and vetiver. Wearing this perfume is like bathing in calmness.",
   },
-//   For Woman Category....
-{
+  //   For Woman Category....
+  {
     Name: "Merry Me",
     imgUrl: "./assets/images/products/merryme_47_11zon.jpeg",
-    FeatureImg: "./assets/images/products/merry_me_d55db43c-ab98-4623-8bb1-b74cec9503d5.png",
+    FeatureImg:
+      "./assets/images/products/merry_me_d55db43c-ab98-4623-8bb1-b74cec9503d5.png",
     Category: "Women",
     Price: 1620,
     Sale_Price: 1600,
@@ -59,7 +60,8 @@ export const Products = [
   {
     Name: "Lady Eve",
     imgUrl: "./assets/images/products/LAdyeve_37_11zon.jpeg",
-    FeatureImg: "./assets/images/products/LADY_EVE_ea351503-3e3f-4ddc-9a7e-5da095ce0700.png",
+    FeatureImg:
+      "./assets/images/products/LADY_EVE_ea351503-3e3f-4ddc-9a7e-5da095ce0700.png",
     Category: "Women",
     Price: 1320,
     Sale_Price: 1300,
@@ -134,6 +136,7 @@ export const Products = [
     Description:
       "Addiction is an aromatic woody fragrance for men and women. The fragrance is a beautiful blend of notes that creates an appealing aura. The top notes are amber and green notes while the middle notes are resins, woody notes, and coffee.The base notes are agarwood oud and incense. A scent with an intense olfactory signature with its notes of oud wood and incense that overwhelms the senses. It is an extremely powerful unisex perfume and a must-have scent in any fraghead’s perfume collection. ",
   },
+
   // Wastern
 
   {
@@ -180,5 +183,4 @@ export const Products = [
     Description:
       "Smash My Head is an aromatic fougere fragrance for men. The top notes of this perfume include Bergamot, Calabrian and Pepper, while the  middle notes are Lavender, Sichuan pepper, Pink Pepper, Patchouli, Vetiver, Elemi and Geranium. The base notes are Cedar, Ambroxan and Labdanum. This fragrance is extremely fresh and noble but it simultaneously also has a rawness to it.",
   },
-
 ];

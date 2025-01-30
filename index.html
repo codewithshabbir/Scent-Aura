@@ -4,85 +4,128 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="assets/css/style.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <title>Document</title>
   </head>
   <body>
-    <header id="main-header" class="bg-black px-6 xl:px-16 z-50 2xl:px-36 w-full transition-all duration-100">
+    <header
+      id="main-header"
+      class="bg-black px-6 xl:px-16 z-50 2xl:px-36 w-full transition-all duration-100"
+    >
       <!-- Top Bar -->
-      <div class="relative w-full py-6 flex items-center justify-center text-white">
-        <span id="top-bar-slide-1" class="absolute transition-opacity duration-500 opacity-100">
+      <div
+        class="relative w-full py-6 flex items-center justify-center text-white"
+      >
+        <span
+          id="top-bar-slide-1"
+          class="absolute transition-opacity duration-500 opacity-100"
+        >
           Delivery all over Pakistan
         </span>
-        <span id="top-bar-slide-2" class="absolute transition-opacity duration-500 opacity-0">
+        <span
+          id="top-bar-slide-2"
+          class="absolute transition-opacity duration-500 opacity-0"
+        >
           Free shipping on order above Rs. 3000
         </span>
       </div>
-      <hr>
+      <hr />
       <!-- Header -->
       <div class="py-6 flex items-center justify-between">
         <!-- Logo -->
-        <img class="w-32 sm:w-40 lg:w-52" src="./assets/images/logo/logo.png" alt="Logo">
-    
+        <img
+          class="w-32 sm:w-40 lg:w-52"
+          src="./assets/images/logo/logo.png"
+          alt="Logo"
+        />
+
         <!-- Navigation (Hidden on Mobile) -->
         <nav class="hidden md:block">
           <ul class="flex text-white gap-4 sm:gap-6 text-sm lg:text-base">
-            <li><a href="#" class="hover:underline">Shop</a></li>
+            <li><a href="./shop.html" class="hover:underline">Shop</a></li>
             <li><a href="#" class="hover:underline">Collections</a></li>
             <li><a href="#" class="hover:underline">Weekly Deals</a></li>
             <li><a href="#" class="hover:underline">Gift Sets</a></li>
             <li><a href="#" class="hover:underline">Contact</a></li>
           </ul>
         </nav>
-    
+
         <!-- Icons -->
-        <div class="text-white text-xl hidden md:flex sm:text-2xl gap-4 sm:gap-5">
+        <div
+          class="text-white text-xl hidden md:flex sm:text-2xl gap-4 sm:gap-5"
+        >
           <i class="fa-regular fa-heart cursor-pointer hover:text-gray-400"></i>
           <i class="fa-regular fa-user cursor-pointer hover:text-gray-400"></i>
-          <i class="fa-solid fa-cart-plus cursor-pointer hover:text-gray-400"></i>
-          <i class="fa-solid fa-magnifying-glass cursor-pointer hover:text-gray-400"></i>
+          <i
+            class="fa-solid fa-cart-plus cursor-pointer hover:text-gray-400"
+          ></i>
+          <i
+            class="fa-solid fa-magnifying-glass cursor-pointer hover:text-gray-400"
+          ></i>
         </div>
-    
+
         <!-- Mobile Menu Toggle -->
         <button id="menu-toggle" class="block md:hidden text-white text-2xl">
           <i class="fa-solid fa-bars"></i>
         </button>
       </div>
-    
+
       <!-- Mobile Drawer -->
-      <div id="mobile-drawer" class="fixed top-0 left-0 w-3/4 max-w-sm h-full bg-black text-white transform -translate-x-full transition-transform duration-300 z-50">
+      <div
+        id="mobile-drawer"
+        class="fixed top-0 left-0 w-3/4 max-w-sm h-full bg-black text-white transform -translate-x-full transition-transform duration-300 z-50"
+      >
         <div class="px-5 py-12 flex flex-col gap-6">
           <!-- Drawer Logo -->
-          <img class="w-32" src="./assets/images/logo/logo.png" alt="Logo">
-    
+          <img class="w-32" src="./assets/images/logo/logo.png" alt="Logo" />
+
           <!-- Search Bar -->
           <div class="flex items-center bg-gray-800 rounded-lg px-3 py-2">
             <i class="fa-solid fa-magnifying-glass text-gray-400 mr-3"></i>
-            <input type="text" placeholder="Search..." class="w-full bg-transparent text-white placeholder-gray-400 outline-none">
+            <input
+              type="text"
+              placeholder="Search..."
+              class="w-full bg-transparent text-white placeholder-gray-400 outline-none"
+            />
           </div>
-    
+
           <!-- Navigation Links -->
           <ul class="flex flex-col gap-4 text-sm">
-            <li><a href="#" class="hover:underline">Shop</a></li>
+            <li><a href="./shop.html" class="hover:underline">Shop</a></li>
             <li><a href="#" class="hover:underline">Collections</a></li>
             <li><a href="#" class="hover:underline">Weekly Deals</a></li>
             <li><a href="#" class="hover:underline">Gift Sets</a></li>
             <li><a href="#" class="hover:underline">Contact</a></li>
           </ul>
-    
+
           <!-- Icons -->
           <div class="flex gap-4 text-xl">
-            <i class="fa-regular fa-heart cursor-pointer hover:text-gray-400"></i>
-            <i class="fa-regular fa-user cursor-pointer hover:text-gray-400"></i>
-            <i class="fa-solid fa-cart-plus cursor-pointer hover:text-gray-400"></i>
+            <i
+              class="fa-regular fa-heart cursor-pointer hover:text-gray-400"
+            ></i>
+            <i
+              class="fa-regular fa-user cursor-pointer hover:text-gray-400"
+            ></i>
+            <i
+              class="fa-solid fa-cart-plus cursor-pointer hover:text-gray-400"
+            ></i>
           </div>
         </div>
       </div>
-    
+
       <!-- Overlay -->
-      <div id="drawer-overlay" class="fixed top-0 left-0 w-full h-full bg-black bg-opacity-50 hidden z-40"></div>
+      <div
+        id="drawer-overlay"
+        class="fixed top-0 left-0 w-full h-full bg-black bg-opacity-50 hidden z-40"
+      ></div>
     </header>
-    
+
     <main>
       <section class="flex flex-col">
         <img
@@ -93,17 +136,33 @@
       <section class="px-6 xl:px-16 2xl:px-36 my-20">
         <div class="flex flex-col">
           <!-- Section Header -->
-          <div class="flex flex-col sm:flex-row justify-between items-center text-center sm:text-left mb-8">
-            <h2 class="font-bold text-3xl lg:text-4xl text-gray-800">Our Best Sellers</h2>
-            <a href="#" class="mt-4 sm:mt-0 text-red-600 hover:text-red-700 underline">View All</a>
+          <div
+            class="flex flex-col sm:flex-row justify-between items-center text-center sm:text-left mb-8"
+          >
+            <h2 class="font-bold text-3xl lg:text-4xl text-gray-800">
+              Our Best Sellers
+            </h2>
+            <a
+              href="#"
+              class="mt-4 sm:mt-0 text-red-600 hover:text-red-700 underline"
+              >View All</a
+            >
           </div>
-        
+
           <!-- Product Grid -->
-          <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 xl:grid-cols-4 gap-6">
+          <div
+            class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 xl:grid-cols-4 gap-6"
+          >
             <!-- Card 1 -->
-            <div class="bg-white shadow-md rounded-lg overflow-hidden hover:shadow-lg transition-shadow duration-300">
+            <div
+              class="bg-white shadow-md rounded-lg overflow-hidden hover:shadow-lg transition-shadow duration-300"
+            >
               <!-- Image -->
-              <img src="assets/images/perfums/1st.webp" alt="Catch 22" class="w-full h-56 object-cover">
+              <img
+                src="assets/images/perfums/1st.webp"
+                alt="Catch 22"
+                class="w-full h-56 object-cover"
+              />
               <!-- Content -->
               <div class="p-4">
                 <h3 class="text-lg font-semibold text-gray-800">Catch 22</h3>
@@ -113,47 +172,76 @@
                 </p>
               </div>
             </div>
-        
+
             <!-- Card 2 -->
-            <div class="bg-white shadow-md rounded-lg overflow-hidden hover:shadow-lg transition-shadow duration-300">
-              <img src="assets/images/perfums/2nd.jpg" alt="Catch 22 - Gold Edition" class="w-full h-56 object-cover">
+            <div
+              class="bg-white shadow-md rounded-lg overflow-hidden hover:shadow-lg transition-shadow duration-300"
+            >
+              <img
+                src="assets/images/perfums/2nd.jpg"
+                alt="Catch 22 - Gold Edition"
+                class="w-full h-56 object-cover"
+              />
               <div class="p-4">
-                <h3 class="text-lg font-semibold text-gray-800">Catch 22 - Gold Edition</h3>
-                <p class="text-gray-600 text-sm mt-1">The Premium Gold Fragrance</p>
+                <h3 class="text-lg font-semibold text-gray-800">
+                  Catch 22 - Gold Edition
+                </h3>
+                <p class="text-gray-600 text-sm mt-1">
+                  The Premium Gold Fragrance
+                </p>
                 <p class="mt-2 text-red-500 font-bold">Rs. 3,550</p>
               </div>
             </div>
-        
+
             <!-- Card 3 -->
-            <div class="bg-white shadow-md rounded-lg overflow-hidden hover:shadow-lg transition-shadow duration-300">
-              <img src="assets/images/perfums/3rd.webp" alt="Lady Eve" class="w-full h-56 object-cover">
+            <div
+              class="bg-white shadow-md rounded-lg overflow-hidden hover:shadow-lg transition-shadow duration-300"
+            >
+              <img
+                src="assets/images/perfums/3rd.webp"
+                alt="Lady Eve"
+                class="w-full h-56 object-cover"
+              />
               <div class="p-4">
                 <h3 class="text-lg font-semibold text-gray-800">Lady Eve</h3>
-                <p class="text-gray-600 text-sm mt-1">The Most Nostalgic Scent</p>
+                <p class="text-gray-600 text-sm mt-1">
+                  The Most Nostalgic Scent
+                </p>
                 <p class="mt-2 text-red-500 font-bold">Rs. 1,550</p>
               </div>
             </div>
-        
+
             <!-- Card 4 -->
-            <div class="bg-white shadow-md rounded-lg overflow-hidden hover:shadow-lg transition-shadow duration-300">
-              <img src="assets/images/perfums/4th.webp" alt="Smash My Head (EDP)" class="w-full h-56 object-cover">
+            <div
+              class="bg-white shadow-md rounded-lg overflow-hidden hover:shadow-lg transition-shadow duration-300"
+            >
+              <img
+                src="assets/images/perfums/4th.webp"
+                alt="Smash My Head (EDP)"
+                class="w-full h-56 object-cover"
+              />
               <div class="p-4">
-                <h3 class="text-lg font-semibold text-gray-800">Smash My Head (EDP)</h3>
-                <p class="text-gray-600 text-sm mt-1">Our Top Rated Perfume ⭐</p>
+                <h3 class="text-lg font-semibold text-gray-800">
+                  Smash My Head (EDP)
+                </h3>
+                <p class="text-gray-600 text-sm mt-1">
+                  Our Top Rated Perfume ⭐
+                </p>
                 <p class="mt-2 text-red-500 font-bold">
                   <span class="text-red-600 text-xs">from</span> Rs. 2,590
                 </p>
               </div>
             </div>
-  
           </div>
-        </div>        
+        </div>
       </section>
       <section class="px-6 xl:px-16 2xl:px-36 my-20">
         <div class="grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-4 gap-8">
           <!-- Card 1 -->
           <div class="bg-white flex flex-col items-center">
-            <div class="w-52 h-52 md:w-full md:h-full rounded-full overflow-hidden mb-4 border-4 border-gray-200 hover:-translate-y-2 transform transition-transform duration-300 cursor-pointer">
+            <div
+              class="w-52 h-52 md:w-full md:h-full rounded-full overflow-hidden mb-4 border-4 border-gray-200 hover:-translate-y-2 transform transition-transform duration-300 cursor-pointer"
+            >
               <img
                 src="assets/images/perfums/6th.webp"
                 alt="Catch 22"
@@ -162,10 +250,12 @@
             </div>
             <h3 class="text-lg font-semibold text-gray-800">Catch 22</h3>
           </div>
-        
+
           <!-- Card 2 -->
           <div class="bg-white flex flex-col items-center">
-            <div class="w-52 h-52 md:w-full md:h-full rounded-full overflow-hidden mb-4 border-4 border-gray-200 hover:-translate-y-2 transform transition-transform duration-300 cursor-pointer">
+            <div
+              class="w-52 h-52 md:w-full md:h-full rounded-full overflow-hidden mb-4 border-4 border-gray-200 hover:-translate-y-2 transform transition-transform duration-300 cursor-pointer"
+            >
               <img
                 src="assets/images/perfums/7th.webp"
                 alt="Catch 22 - Gold Edition"
@@ -176,10 +266,12 @@
               Catch 22 - Gold Edition
             </h3>
           </div>
-        
+
           <!-- Card 3 -->
           <div class="bg-white flex flex-col items-center">
-            <div class="w-52 h-52 md:w-full md:h-full rounded-full overflow-hidden mb-4 border-4 border-gray-200 hover:-translate-y-2 transform transition-transform duration-300 cursor-pointer">
+            <div
+              class="w-52 h-52 md:w-full md:h-full rounded-full overflow-hidden mb-4 border-4 border-gray-200 hover:-translate-y-2 transform transition-transform duration-300 cursor-pointer"
+            >
               <img
                 src="assets/images/perfums/8th.webp"
                 alt="Lady Eve"
@@ -188,10 +280,12 @@
             </div>
             <h3 class="text-lg font-semibold text-gray-800">Lady Eve</h3>
           </div>
-        
+
           <!-- Card 4 -->
           <div class="bg-white flex flex-col items-center">
-            <div class="w-52 h-52 md:w-full md:h-full rounded-full overflow-hidden mb-4 border-4 border-gray-200 hover:-translate-y-2 transform transition-transform duration-300 cursor-pointer">
+            <div
+              class="w-52 h-52 md:w-full md:h-full rounded-full overflow-hidden mb-4 border-4 border-gray-200 hover:-translate-y-2 transform transition-transform duration-300 cursor-pointer"
+            >
               <img
                 src="assets/images/perfums/9th.webp"
                 alt="Smash My Head (EDP)"
@@ -202,18 +296,22 @@
               Smash My Head (EDP)
             </h3>
           </div>
-        </div>    
+        </div>
       </section>
 
       <section class="px-6 xl:px-16 2xl:px-36 my-20">
         <div class="flex flex-col">
           <!-- Section Header -->
-          <div class="flex flex-col sm:flex-row justify-between items-center text-center sm:text-left mb-8">
+          <div
+            class="flex flex-col sm:flex-row justify-between items-center text-center sm:text-left mb-8"
+          >
             <h1 class="font-bold text-4xl">New Arrival</h1>
             <a href="" class="hover:text-red-600 underline">veiw all</a>
           </div>
           <!-- Product Grid -->
-          <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 xl:grid-cols-4 gap-6">
+          <div
+            class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 xl:grid-cols-4 gap-6"
+          >
             <!-- Card 1 -->
             <div class="bg-white shadow-md rounded-lg overflow-hidden">
               <img
@@ -282,7 +380,9 @@
         <div class="grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-4 gap-8">
           <!-- Card 1 -->
           <div class="bg-white flex flex-col items-center">
-            <div class="w-52 h-52 md:w-64 md:h-64 lg:w-full lg:h-64 rounded-full overflow-hidden mb-4 border-4 border-gray-200 hover:-translate-y-2 transform transition-transform duration-300 cursor-pointer">
+            <div
+              class="w-52 h-52 md:w-64 md:h-64 lg:w-full lg:h-64 rounded-full overflow-hidden mb-4 border-4 border-gray-200 hover:-translate-y-2 transform transition-transform duration-300 cursor-pointer"
+            >
               <img
                 src="assets/images/perfums/15th.webp"
                 alt="Catch 22"
@@ -291,22 +391,28 @@
             </div>
             <h3 class="text-lg font-semibold text-gray-800">Catch 22</h3>
           </div>
-        
+
           <!-- Card 2 -->
           <div class="bg-white flex flex-col items-center">
-            <div class="w-52 h-52 md:w-64 md:h-64 lg:w-full lg:h-64 rounded-full overflow-hidden mb-4 border-4 border-gray-200 hover:-translate-y-2 transform transition-transform duration-300 cursor-pointer">
+            <div
+              class="w-52 h-52 md:w-64 md:h-64 lg:w-full lg:h-64 rounded-full overflow-hidden mb-4 border-4 border-gray-200 hover:-translate-y-2 transform transition-transform duration-300 cursor-pointer"
+            >
               <img
                 src="assets/images/perfums/16th.webp"
                 alt="Catch 22 - Gold Edition"
                 class="w-full h-full object-cover"
               />
             </div>
-            <h3 class="text-lg font-semibold text-gray-800">Catch 22 - Gold Edition</h3>
+            <h3 class="text-lg font-semibold text-gray-800">
+              Catch 22 - Gold Edition
+            </h3>
           </div>
-        
+
           <!-- Card 3 -->
           <div class="bg-white flex flex-col items-center">
-            <div class="w-52 h-52 md:w-64 md:h-64 lg:w-full lg:h-64 rounded-full overflow-hidden mb-4 border-4 border-gray-200 hover:-translate-y-2 transform transition-transform duration-300 cursor-pointer">
+            <div
+              class="w-52 h-52 md:w-64 md:h-64 lg:w-full lg:h-64 rounded-full overflow-hidden mb-4 border-4 border-gray-200 hover:-translate-y-2 transform transition-transform duration-300 cursor-pointer"
+            >
               <img
                 src="assets/images/perfums/17th.webp"
                 alt="Lady Eve"
@@ -315,30 +421,38 @@
             </div>
             <h3 class="text-lg font-semibold text-gray-800">Lady Eve</h3>
           </div>
-        
+
           <!-- Card 4 -->
           <div class="bg-white flex flex-col items-center">
-            <div class="w-52 h-52 md:w-64 md:h-64 lg:w-full lg:h-64 rounded-full overflow-hidden mb-4 border-4 border-gray-200 hover:-translate-y-2 transform transition-transform duration-300 cursor-pointer">
+            <div
+              class="w-52 h-52 md:w-64 md:h-64 lg:w-full lg:h-64 rounded-full overflow-hidden mb-4 border-4 border-gray-200 hover:-translate-y-2 transform transition-transform duration-300 cursor-pointer"
+            >
               <img
                 src="assets/images/perfums/18th.webp"
                 alt="Smash My Head (EDP)"
                 class="w-full h-full object-cover"
               />
             </div>
-            <h3 class="text-lg font-semibold text-gray-800">Smash My Head (EDP)</h3>
+            <h3 class="text-lg font-semibold text-gray-800">
+              Smash My Head (EDP)
+            </h3>
           </div>
         </div>
       </section>
 
       <section class="px-6 xl:px-16 2xl:px-36 my-20">
         <div class="flex flex-col">
-           <!-- Section Header -->
-          <div class="flex flex-col sm:flex-row justify-between items-center text-center sm:text-left mb-8">
+          <!-- Section Header -->
+          <div
+            class="flex flex-col sm:flex-row justify-between items-center text-center sm:text-left mb-8"
+          >
             <h1 class="font-bold text-4xl">WEEKLY DEALS</h1>
             <a href="" class="hover:text-red-600 underline">veiw all</a>
           </div>
           <!-- Product Grid -->
-          <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 xl:grid-cols-4 gap-6">
+          <div
+            class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 xl:grid-cols-4 gap-6"
+          >
             <!-- Card 1 -->
             <div class="bg-white shadow-md rounded-lg overflow-hidden">
               <img
@@ -395,7 +509,9 @@
                 class="w-full"
               />
               <div class="p-4">
-                <h3 class="text-lg font-semibold text-gray-800">Orchid House</h3>
+                <h3 class="text-lg font-semibold text-gray-800">
+                  Orchid House
+                </h3>
                 <p class="text-gray-600 text-sm">
                   4th Best Selling Soft Oriental Perfume
                 </p>
@@ -411,53 +527,65 @@
 
       <section class="px-6 xl:px-16 2xl:px-36 my-20">
         <div class="container flex min-h-screen justify-center items-center">
-        <!-- Responsive Grid -->
-        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-4">
-          <!-- Card 1 -->
-          <div class="relative bg-white rounded-3xl shadow-lg overflow-hidden">
-            <img
-              src="assets/images/perfums/24th.webp"
-              alt="Perfume Wax"
-              class="w-full h-56"
-            />
-          </div>
-          <!-- Card 2 -->
-          <div class="relative bg-white rounded-3xl shadow-lg overflow-hidden">
-            <img
-              src="assets/images/perfums/25th.webp"
-              alt="Sample Set"
-              class="w-full h-56"
-            />
-          </div>
-          <!-- Card 3 -->
-          <div class="relative bg-white rounded-3xl shadow-lg overflow-hidden">
-            <img
-              src="assets/images/perfums/26th.webp"
-              alt="Attar"
-              class="w-full h-56"
-            />
-          </div>
-          <!-- Card 4 -->
-          <div class="relative bg-white rounded-3xl shadow-lg overflow-hidden">
-            <img
-              src="assets/images/perfums/27th.webp"
-              alt="Air Freshness"
-              class="w-full h-56"
-            />
+          <!-- Responsive Grid -->
+          <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-4">
+            <!-- Card 1 -->
+            <div
+              class="relative bg-white rounded-3xl shadow-lg overflow-hidden"
+            >
+              <img
+                src="assets/images/perfums/24th.webp"
+                alt="Perfume Wax"
+                class="w-full h-56"
+              />
+            </div>
+            <!-- Card 2 -->
+            <div
+              class="relative bg-white rounded-3xl shadow-lg overflow-hidden"
+            >
+              <img
+                src="assets/images/perfums/25th.webp"
+                alt="Sample Set"
+                class="w-full h-56"
+              />
+            </div>
+            <!-- Card 3 -->
+            <div
+              class="relative bg-white rounded-3xl shadow-lg overflow-hidden"
+            >
+              <img
+                src="assets/images/perfums/26th.webp"
+                alt="Attar"
+                class="w-full h-56"
+              />
+            </div>
+            <!-- Card 4 -->
+            <div
+              class="relative bg-white rounded-3xl shadow-lg overflow-hidden"
+            >
+              <img
+                src="assets/images/perfums/27th.webp"
+                alt="Air Freshness"
+                class="w-full h-56"
+              />
+            </div>
           </div>
         </div>
-      </div>
       </section>
 
       <section class="px-6 xl:px-16 2xl:px-36 my-20">
         <div class="flex flex-col min-h-screen">
           <!-- Section Header -->
-          <div class="flex flex-col sm:flex-row justify-between items-center text-center sm:text-left mb-8">
+          <div
+            class="flex flex-col sm:flex-row justify-between items-center text-center sm:text-left mb-8"
+          >
             <h1 class="font-bold text-4xl">Attars - Alcohol Free</h1>
             <a href="" class="hover:text-red-600 underline">veiw all</a>
           </div>
           <!-- Product Grid -->
-          <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 xl:grid-cols-4 gap-6">
+          <div
+            class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 xl:grid-cols-4 gap-6"
+          >
             <!-- Card 1 -->
             <div class="bg-white shadow-md rounded-lg overflow-hidden">
               <img
@@ -530,27 +658,35 @@
 
       <section class="px-6 xl:px-16 2xl:px-36 my-20">
         <div
-        class="min-h-screen flex flex-row overflow-hidden rounded-3xl bg-black"
-      >
-        <div class="flex">
-          <img src="assets/images/perfums/33th.webp" class="max-w-2xl" alt="" />
-        </div>
-        <div
-          class="flex flex-col justify-center lg:items-start text-center lg:text-left gap-5 p-6"
+          class="min-h-screen flex flex-row overflow-hidden rounded-3xl bg-black"
         >
-          <h1 class="text-white text-6xl font-bold">
-            DON'T KNOW WHERE TO START?
-          </h1>
-          <div class="flex flex-col gap-5">
-            <button class="text-black bg-white p-4 w-40 font-bold rounded-full">
-              Try Sample Set
-            </button>
-            <button class="text-black bg-white p-4 w-40 font-bold rounded-full">
-              Attempt Quiz
-            </button>
+          <div class="flex">
+            <img
+              src="assets/images/perfums/33th.webp"
+              class="max-w-2xl"
+              alt=""
+            />
+          </div>
+          <div
+            class="flex flex-col justify-center lg:items-start text-center lg:text-left gap-5 p-6"
+          >
+            <h1 class="text-white text-6xl font-bold">
+              DON'T KNOW WHERE TO START?
+            </h1>
+            <div class="flex flex-col gap-5">
+              <button
+                class="text-black bg-white p-4 w-40 font-bold rounded-full"
+              >
+                Try Sample Set
+              </button>
+              <button
+                class="text-black bg-white p-4 w-40 font-bold rounded-full"
+              >
+                Attempt Quiz
+              </button>
+            </div>
           </div>
         </div>
-      </div>
       </section>
 
       <section class="px-6 xl:px-16 2xl:px-36 my-20">
@@ -558,69 +694,92 @@
           <!-- Card 1 -->
           <div class="flex flex-col items-center mb-10 sm:mb-0">
             <div class="flex justify-center mb-4">
-              <img src="assets/images/icon/trophy.png" class="w-20 h-20" alt="" />
+              <img
+                src="assets/images/icon/trophy.png"
+                class="w-20 h-20"
+                alt=""
+              />
             </div>
-            <h1 class="font-bold text-2xl text-center">Awarded by Consumer Association of Pakistan</h1>
+            <h1 class="font-bold text-2xl text-center">
+              Awarded by Consumer Association of Pakistan
+            </h1>
             <p class="text-center text-gray-600 mt-2">
-              Consumer Association of Pakistan recognized Scents N Stories in the 17th Consumer Choice Awards
+              Consumer Association of Pakistan recognized Scents N Stories in
+              the 17th Consumer Choice Awards
             </p>
           </div>
-      
+
           <!-- Card 2 -->
           <div class="flex flex-col items-center mb-10 sm:mb-0">
             <div class="flex justify-center mb-4">
-              <img src="assets/images/icon/shield-check.png" class="w-20 h-20" alt="" />
+              <img
+                src="assets/images/icon/shield-check.png"
+                class="w-20 h-20"
+                alt=""
+              />
             </div>
-            <h1 class="font-bold text-2xl text-center">15 Days Easy Returns Policy</h1>
+            <h1 class="font-bold text-2xl text-center">
+              15 Days Easy Returns Policy
+            </h1>
             <div class="flex flex-col items-center text-center mt-2">
               <p class="text-gray-600">
-                Didn't Love What You Ordered? Avail returns or exchange for your online purchases within 15 days.
+                Didn't Love What You Ordered? Avail returns or exchange for your
+                online purchases within 15 days.
               </p>
               <p class="text-gray-600">For in-store exchanges only.</p>
             </div>
           </div>
-      
+
           <!-- Card 3 -->
           <div class="flex flex-col items-center">
             <div class="flex justify-center mb-4">
               <img src="assets/images/icon/like.png" class="w-20 h-20" alt="" />
             </div>
-            <h1 class="font-bold text-2xl text-center">High Concentration Perfumes</h1>
+            <h1 class="font-bold text-2xl text-center">
+              High Concentration Perfumes
+            </h1>
             <p class="text-center text-gray-600 mt-2">
-              We Set Our Concentrations As High As Possible To Ensure Maximum Performance Of The Perfumes.
+              We Set Our Concentrations As High As Possible To Ensure Maximum
+              Performance Of The Perfumes.
             </p>
           </div>
         </div>
-      </section>      
+      </section>
 
       <section class="px-6 xl:px-16 2xl:px-36 my-20">
         <div
-        class="min-h-screen back flex flex-row w-full rounded-3xl overflow-hidden"
-      >
-        <div class="flex">
-          <img src="assets/images/perfums/34th.webp" class="max-w-2xl" alt="" />
-        </div>
-        <div
-          class="flex flex-col justify-center lg:items-start text-center lg:text-left gap-5 p-6"
+          class="min-h-screen back flex flex-row w-full rounded-3xl overflow-hidden"
         >
-          <div class="flex flex-col">
-            <h1 class="text-6xl font-bold">OUR Retail Outlets</h1>
-            <p>
-              In 2021, we took our first steps to expand e-commerce into the
-              realm of traditional retail, and now we have opened several
-              perfume studios in Karachi, Lahore, Islamabad, Peshawar, Multan
-              and other cities. We warmly welcome our customers to visit our
-              studios and personally experience our range of scents.
-            </p>
+          <div class="flex">
+            <img
+              src="assets/images/perfums/34th.webp"
+              class="max-w-2xl"
+              alt=""
+            />
           </div>
+          <div
+            class="flex flex-col justify-center lg:items-start text-center lg:text-left gap-5 p-6"
+          >
+            <div class="flex flex-col">
+              <h1 class="text-6xl font-bold">OUR Retail Outlets</h1>
+              <p>
+                In 2021, we took our first steps to expand e-commerce into the
+                realm of traditional retail, and now we have opened several
+                perfume studios in Karachi, Lahore, Islamabad, Peshawar, Multan
+                and other cities. We warmly welcome our customers to visit our
+                studios and personally experience our range of scents.
+              </p>
+            </div>
 
-          <div class="flex flex-col gap-5">
-            <button class="text-white bg-black p-4 w-40 font-bold rounded-full">
-              Get Direction
-            </button>
+            <div class="flex flex-col gap-5">
+              <button
+                class="text-white bg-black p-4 w-40 font-bold rounded-full"
+              >
+                Get Direction
+              </button>
+            </div>
           </div>
         </div>
-      </div>
       </section>
 
       <section class="px-6 xl:px-16 2xl:px-36 my-20">
@@ -631,18 +790,18 @@
             </h1>
             <p class="">
               <b>Scents N Stories</b> is the first
-              <b>online perfume store</b> that has gotten huge attention only from
-              selling online initially. We sell
+              <b>online perfume store</b> that has gotten huge attention only
+              from selling online initially. We sell
               <b>high quality branded perfumes</b> that are long lasting and
               specially curated by our team. We have the biggest variety of
               <b>branded perfumes in Pakistan</b> as compared to any other local
               fragrance shop. The purpose of having a large variety of scents is
               that we have a collection which takes care of everyone's needs.
               People of every age and gender can find perfumes suited for every
-              occasion and setting as per their preference. Whether you want to go
-              to the office or a party, we have a number of scents for you to
-              choose from for every time of the day. Branded perfumes in Pakistan
-              have become too expensive because of the exchange rate.
+              occasion and setting as per their preference. Whether you want to
+              go to the office or a party, we have a number of scents for you to
+              choose from for every time of the day. Branded perfumes in
+              Pakistan have become too expensive because of the exchange rate.
             </p>
           </div>
           <div class="flex">
@@ -655,21 +814,22 @@
               money. The quality of our scents is at par with the most expensive
               fragrances in the world! Despite having a large variety of
               <b>perfumes for men</b> and women, we give as many details as
-              possible about every perfume in our collection. This is to help the
-              customers make an informed decision.
+              possible about every perfume in our collection. This is to help
+              the customers make an informed decision.
             </p>
           </div>
           <div class="flex">
             <p>
               <b>Most fragrances in Pakistan</b> are sold without giving any
-              concrete knowledge about the perfume itself. If the customers do not
-              like the smell of the perfume, our easy-return policy facilitates
-              them. They can return a perfume within 15 days. The easy-to-use
-              filters at the <b>Scents N Stories</b> website make it extremely
-              easy for the customer to buy the perfect fragrances that suit their
-              personality. Customers can filter their preferences according to
-              gender, genre, type, season, brand, projection, lasting, and notes.
-              <b>Buying branded perfumes in Pakistan</b> has never been this easy!
+              concrete knowledge about the perfume itself. If the customers do
+              not like the smell of the perfume, our easy-return policy
+              facilitates them. They can return a perfume within 15 days. The
+              easy-to-use filters at the <b>Scents N Stories</b> website make it
+              extremely easy for the customer to buy the perfect fragrances that
+              suit their personality. Customers can filter their preferences
+              according to gender, genre, type, season, brand, projection,
+              lasting, and notes. <b>Buying branded perfumes in Pakistan</b> has
+              never been this easy!
             </p>
           </div>
         </div>
@@ -741,31 +901,32 @@
             <p>
               7.
               <a href="" class="underline"
-                >Smash My Head Perfume: An aromatic fougere fragrance for men.</a
+                >Smash My Head Perfume: An aromatic fougere fragrance for
+                men.</a
               >
-              Notes include bergamot, Calabrian, pepper, lavender, Sichuan pepper,
-              pink pepper, patchouli, vetiver, elemi, geranium, cedar, ambroxan,
-              and labdanum.
+              Notes include bergamot, Calabrian, pepper, lavender, Sichuan
+              pepper, pink pepper, patchouli, vetiver, elemi, geranium, cedar,
+              ambroxan, and labdanum.
             </p>
           </div>
         </div>
-  
+
         <div class="flex flex-col my-10 gap-8">
           <div class="flex flex-col gap-6">
             <h1 class="font-bold text-4xl">Unique Perfumes For Women</h1>
             <p>
               It is always challenging to find your favorite fragrance. Scents N
-              Stories offers a large collection of perfume for women. Choose from
-              Floral, Vanilla, Woody, Fruity and Citrus and more oriental
+              Stories offers a large collection of perfume for women. Choose
+              from Floral, Vanilla, Woody, Fruity and Citrus and more oriental
               perfumes.
             </p>
           </div>
           <div class="flex flex-col gap-6">
             <h1 class="font-bold text-4xl">Roll-On and Attar Perfumes</h1>
             <p>
-              <a href="">Roll-on and Attar Perfumes</a> are best for outdoor use.
-              They're small, easy to apply, and long-lasting. Scents N Stories
-              sells different perfumes, each with its unique scent.
+              <a href="">Roll-on and Attar Perfumes</a> are best for outdoor
+              use. They're small, easy to apply, and long-lasting. Scents N
+              Stories sells different perfumes, each with its unique scent.
             </p>
           </div>
           <div class="flex flex-col gap-6">
@@ -774,8 +935,9 @@
             </h1>
             <p>
               Body mist is the best choice for women. It's a light, subtle
-              fragrance that's perfect for everyday use. Scents N Stories provides
-              the option of multiple body mists, each with its unique scent.
+              fragrance that's perfect for everyday use. Scents N Stories
+              provides the option of multiple body mists, each with its unique
+              scent.
             </p>
           </div>
           <div class="flex flex-col gap-6">
@@ -787,9 +949,9 @@
                 by Acqua di Gio, this is a classic choice for men.
               </li>
               <li>
-                <a href="" class="underline">Saiful Malook Perfume:</a> A popular
-                aquatic scent reminiscent of Davidoff Cool Water. It is one of the
-                best long lasting perfumes for men.
+                <a href="" class="underline">Saiful Malook Perfume:</a> A
+                popular aquatic scent reminiscent of Davidoff Cool Water. It is
+                one of the best long lasting perfumes for men.
               </li>
               <li>
                 <a href="" class="underline">Near You Perfume:</a> A versatile
@@ -800,41 +962,42 @@
           <div class="flex flex-col gap-6">
             <h1 class="font-bold text-4xl">Romantic Coffee Perfume</h1>
             <p>
-              <a href="" class="underline">Romantic Coffee Perfume:</a> A sensual,
-              amber-spicy gourmand fragrance for men. Perfect for spring and
-              summer. Notes include vanilla, coffee, wood, and spice.
+              <a href="" class="underline">Romantic Coffee Perfume:</a> A
+              sensual, amber-spicy gourmand fragrance for men. Perfect for
+              spring and summer. Notes include vanilla, coffee, wood, and spice.
             </p>
           </div>
           <div class="flex flex-col gap-6">
             <h1 class="font-bold text-4xl">Into Eternity Perfume</h1>
             <p>
-              <a href="" class="underline">Into Eternity Perfume:</a> An aromatic
-              fougere fragrance, the best perfume for men in Pakistan. Notes
-              include lavender, citrus, spice, wood, and white floral. Best for
-              all seasons except winter.
+              <a href="" class="underline">Into Eternity Perfume:</a> An
+              aromatic fougere fragrance, the best perfume for men in Pakistan.
+              Notes include lavender, citrus, spice, wood, and white floral.
+              Best for all seasons except winter.
             </p>
           </div>
           <div class="flex flex-col gap-6">
             <h1 class="font-bold text-4xl">Oud Perfumes</h1>
             <p>
-              Ouds are considered the most long lasting perfume for women and men.
+              Ouds are considered the most long lasting perfume for women and
+              men.
             </p>
             <p>The best ouds in the list are:</p>
             <ul>
               <li>
                 <a href="" class="underline">Amber Oud Perfume:</a> A classic
-                amber-spicy fragrance for men and women. Notes include lemon, fig,
-                rose, oud, and amber. Best for cool climates.
+                amber-spicy fragrance for men and women. Notes include lemon,
+                fig, rose, oud, and amber. Best for cool climates.
               </li>
               <li>
                 <a href="" class="underline">Oud War Perfume:</a> A bold, unique
-                amber fragrance for men and women. Notes include plum, rose, oud,
-                and spice. Best for cold weather.
+                amber fragrance for men and women. Notes include plum, rose,
+                oud, and spice. Best for cold weather.
               </li>
             </ul>
             <p>Buy High-quality Branded Perfumes at Affordable Prices</p>
           </div>
-        </div>  
+        </div>
       </section>
 
       <section class="px-6 xl:px-16 2xl:px-36 my-20">
@@ -842,11 +1005,16 @@
           <!-- First Column -->
           <div class="flex flex-col items-center gap-5 w-full">
             <div class="flex justify-center">
-              <img src="assets/images/perfums/35th.avif" class="w-full" alt="" />
+              <img
+                src="assets/images/perfums/35th.avif"
+                class="w-full"
+                alt=""
+              />
             </div>
             <div class="flex justify-center">
               <p class="text-center">
-                Download the app, place your order, and have it delivered right to your doorstep that very same day.
+                Download the app, place your order, and have it delivered right
+                to your doorstep that very same day.
               </p>
             </div>
             <div class="flex justify-center">
@@ -855,67 +1023,98 @@
               </p>
             </div>
           </div>
-        
+
           <!-- Second Column -->
           <div class="flex flex-col items-center gap-5 w-full">
             <div class="flex justify-center">
-              <img src="assets/images/perfums/36th.avif" class="w-full" alt="" />
+              <img
+                src="assets/images/perfums/36th.avif"
+                class="w-full"
+                alt=""
+              />
             </div>
-            <div class="flex flex-col justify-center text-center items-center gap-5">
+            <div
+              class="flex flex-col justify-center text-center items-center gap-5"
+            >
               <p>
-                Download the app, place your order, and have it delivered right to your doorstep that very same day.
+                Download the app, place your order, and have it delivered right
+                to your doorstep that very same day.
               </p>
               <p class="text-sm text-gray-600">
                 *Applicable Only to Karachi and Lahore Residents
               </p>
             </div>
           </div>
-        </div>        
+        </div>
       </section>
 
       <section class="px-6 xl:px-16 2xl:px-36 my-20">
         <div class="flex flex-col sm:flex-row gap-10 justify-center">
           <!-- Card 1 -->
-          <div class="card flex flex-col items-center rounded-3xl p-5 bg-white shadow-lg">
+          <div
+            class="card flex flex-col items-center rounded-3xl p-5 bg-white shadow-lg"
+          >
             <div class="flex justify-center mb-4">
-              <img src="assets/images/perfums/37th.webp" class="w-80 rounded-t-full" alt="" />
+              <img
+                src="assets/images/perfums/37th.webp"
+                class="w-80 rounded-t-full"
+                alt=""
+              />
             </div>
             <div class="flex flex-col items-center text-center gap-3">
               <h1 class="font-bold text-xl text-gray-800">WEEKLY DEALS</h1>
               <p class="text-gray-600">
-                Get the best fragrances in town at discounted prices & not miss a
-                single update with these Deals.
+                Get the best fragrances in town at discounted prices & not miss
+                a single update with these Deals.
               </p>
               <button class="p-4 bg-black text-white font-bold rounded-full">
                 Get Yours
               </button>
             </div>
           </div>
-      
+
           <!-- Card 2 -->
-          <div class="card flex flex-col items-center rounded-3xl p-5 bg-[#c4c3c3] shadow-lg">
+          <div
+            class="card flex flex-col items-center rounded-3xl p-5 bg-[#c4c3c3] shadow-lg"
+          >
             <div class="flex justify-center mb-4">
-              <img src="assets/images/perfums/38th.webp" class="w-80 rounded-t-full" alt="" />
+              <img
+                src="assets/images/perfums/38th.webp"
+                class="w-80 rounded-t-full"
+                alt=""
+              />
             </div>
             <div class="flex flex-col items-center text-center gap-3">
-              <h1 class="font-bold text-2xl text-white">Famous Perfume DNA's</h1>
+              <h1 class="font-bold text-2xl text-white">
+                Famous Perfume DNA's
+              </h1>
               <p class="text-white">
-                Looking for famous perfume DNAs? Find which of your favorite scents
-                are similar to!
+                Looking for famous perfume DNAs? Find which of your favorite
+                scents are similar to!
               </p>
-              <button class="p-4 bg-white text-[#c4c3c3] font-bold rounded-full">
+              <button
+                class="p-4 bg-white text-[#c4c3c3] font-bold rounded-full"
+              >
                 Read More
               </button>
             </div>
           </div>
-      
+
           <!-- Card 3 -->
-          <div class="card flex flex-col items-center rounded-3xl p-5 bg-white shadow-lg">
+          <div
+            class="card flex flex-col items-center rounded-3xl p-5 bg-white shadow-lg"
+          >
             <div class="flex justify-center mb-4">
-              <img src="assets/images/perfums/39th.webp" class="w-80 rounded-t-full" alt="" />
+              <img
+                src="assets/images/perfums/39th.webp"
+                class="w-80 rounded-t-full"
+                alt=""
+              />
             </div>
             <div class="flex flex-col items-center text-center gap-3">
-              <h1 class="font-bold text-xl text-gray-800">Best Attar Fragrances</h1>
+              <h1 class="font-bold text-xl text-gray-800">
+                Best Attar Fragrances
+              </h1>
               <p class="text-gray-600">
                 You are an absolute Attar fan? Then you'll love these attar
                 fragrances for sure, so don’t miss!
@@ -927,24 +1126,30 @@
           </div>
         </div>
       </section>
-      
+
       <section>
         <div
-      class="mt-10 gap-5 flex flex-col justify-center text-center items-center bg-black w-full h-56"
-    >
-      <h1 class="font-bold text-white text-3xl">PRODUCT CATALOGUE</h1>
-      <button class="font-bold bg-white py-3 px-8 rounded-full">
-        Download Now
-      </button>
-    </div>
+          class="mt-10 gap-5 flex flex-col justify-center text-center items-center bg-black w-full h-56"
+        >
+          <h1 class="font-bold text-white text-3xl">PRODUCT CATALOGUE</h1>
+          <button class="font-bold bg-white py-3 px-8 rounded-full">
+            Download Now
+          </button>
+        </div>
       </section>
 
       <section>
-        <div class="flex flex-col sm:flex-row sm:items-center gap-5 justify-center px-6 sm:px-16 xl:px-36 my-10">
-          <h3 class="font-bold text-xl sm:text-2xl text-center sm:text-left sm:w-1/2">
+        <div
+          class="flex flex-col sm:flex-row sm:items-center gap-5 justify-center px-6 sm:px-16 xl:px-36 my-10"
+        >
+          <h3
+            class="font-bold text-xl sm:text-2xl text-center sm:text-left sm:w-1/2"
+          >
             Let's keep in touch! Get email offers & the latest news from us
           </h3>
-          <div class="flex flex-col sm:flex-row gap-4 sm:gap-5 sm:w-1/2 justify-center sm:justify-start">
+          <div
+            class="flex flex-col sm:flex-row gap-4 sm:gap-5 sm:w-1/2 justify-center sm:justify-start"
+          >
             <input
               type="email"
               placeholder="Enter your email"
@@ -957,15 +1162,20 @@
             </button>
           </div>
         </div>
-        
       </section>
     </main>
 
     <footer class="bg-black text-white px-6 xl:px-16 2xl:px-36 pt-20">
-      <div class="container mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-8">
+      <div
+        class="container mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-8"
+      >
         <!-- Logo and Branding -->
         <div class="text-center sm:text-left">
-          <img src="./assets/images/logo/patner-logo.png" alt="Quetta Gladiators Logo" class="mx-auto sm:mx-0 mb-4">
+          <img
+            src="./assets/images/logo/patner-logo.png"
+            alt="Quetta Gladiators Logo"
+            class="mx-auto sm:mx-0 mb-4"
+          />
         </div>
         <!-- About -->
         <div>
@@ -977,7 +1187,9 @@
             <li><a href="#" class="hover:underline">Quiz</a></li>
             <li><a href="#" class="hover:underline">Our New Logo</a></li>
             <li><a href="#" class="hover:underline">Careers / Jobs</a></li>
-            <li><a href="#" class="hover:underline">Accessibility Statement</a></li>
+            <li>
+              <a href="#" class="hover:underline">Accessibility Statement</a>
+            </li>
           </ul>
         </div>
         <!-- Support -->
@@ -997,7 +1209,9 @@
           <ul class="space-y-2">
             <li><a href="#" class="hover:underline">Gold Membership</a></li>
             <li><a href="#" class="hover:underline">Ask For A Perfume</a></li>
-            <li><a href="#" class="hover:underline">Bulk / Customize Orders</a></li>
+            <li>
+              <a href="#" class="hover:underline">Bulk / Customize Orders</a>
+            </li>
             <li><a href="#" class="hover:underline">Own a Franchise</a></li>
             <li><a href="#" class="hover:underline">Store Locator</a></li>
           </ul>
@@ -1006,19 +1220,43 @@
         <div>
           <h3 class="font-bold mb-4">GET IN TOUCH</h3>
           <ul class="space-y-2">
-            <li><i class="fa-solid fa-phone"></i> <a href="tel:+923111007862" class="hover:underline">+92 311 100 7862</a></li>
-            <li><i class="fa-regular fa-envelope"></i> <a href="mailto:example@example.com" class="hover:underline">Email us</a></li>
+            <li>
+              <i class="fa-solid fa-phone"></i>
+              <a href="tel:+923111007862" class="hover:underline"
+                >+92 311 100 7862</a
+              >
+            </li>
+            <li>
+              <i class="fa-regular fa-envelope"></i>
+              <a href="mailto:example@example.com" class="hover:underline"
+                >Email us</a
+              >
+            </li>
           </ul>
           <div class="flex mt-4 flex-col">
             <h3 class="uppercase">Follow us</h3>
             <div>
-              <a href="#" class="hover:text-gray-400"><i class="fab fa-instagram"></i></a>
-              <a href="#" class="hover:text-gray-400"><i class="fab fa-facebook"></i></a>
-              <a href="#" class="hover:text-gray-400"><i class="fab fa-youtube"></i></a>
-              <a href="#" class="hover:text-gray-400"><i class="fab fa-twitter"></i></a>
-              <a href="#" class="hover:text-gray-400"><i class="fab fa-snapchat"></i></a>
-              <a href="#" class="hover:text-gray-400"><i class="fab fa-tiktok"></i></a>
-              <a href="#" class="hover:text-gray-400"><i class="fab fa-linkedin"></i></a>
+              <a href="#" class="hover:text-gray-400"
+                ><i class="fab fa-instagram"></i
+              ></a>
+              <a href="#" class="hover:text-gray-400"
+                ><i class="fab fa-facebook"></i
+              ></a>
+              <a href="#" class="hover:text-gray-400"
+                ><i class="fab fa-youtube"></i
+              ></a>
+              <a href="#" class="hover:text-gray-400"
+                ><i class="fab fa-twitter"></i
+              ></a>
+              <a href="#" class="hover:text-gray-400"
+                ><i class="fab fa-snapchat"></i
+              ></a>
+              <a href="#" class="hover:text-gray-400"
+                ><i class="fab fa-tiktok"></i
+              ></a>
+              <a href="#" class="hover:text-gray-400"
+                ><i class="fab fa-linkedin"></i
+              ></a>
             </div>
           </div>
         </div>
@@ -1026,11 +1264,12 @@
       <div class="container mx-auto mt-8 border-t border-gray-600 py-6">
         <div class="flex justify-center text-center text-gray-50">
           <!-- Website Name -->
-          <span class="font-semibold">Scent Aura &copy; 2025. All Rights Reserved.</span>
+          <span class="font-semibold"
+            >Scent Aura &copy; 2025. All Rights Reserved.</span
+          >
         </div>
-      </div>      
+      </div>
     </footer>
-    
 
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="./assets/js/main.js"></script>

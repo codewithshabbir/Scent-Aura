@@ -1,0 +1,567 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>Shop</title>
+  </head>
+  <body>
+    <header
+      id="main-header"
+      class="bg-black px-6 xl:px-16 z-50 2xl:px-36 w-full transition-all duration-100"
+    >
+      <!-- Top Bar -->
+      <div
+        class="relative w-full py-6 flex items-center justify-center text-white"
+      >
+        <span
+          id="top-bar-slide-1"
+          class="absolute transition-opacity duration-500 opacity-100"
+        >
+          Delivery all over Pakistan
+        </span>
+        <span
+          id="top-bar-slide-2"
+          class="absolute transition-opacity duration-500 opacity-0"
+        >
+          Free shipping on order above Rs. 3000
+        </span>
+      </div>
+      <hr />
+      <!-- Header -->
+      <div class="py-6 flex items-center justify-between">
+        <!-- Logo -->
+        <img
+          class="w-32 sm:w-40 lg:w-52"
+          src="./assets/images/logo/logo.png"
+          alt="Logo"
+        />
+
+        <!-- Navigation (Hidden on Mobile) -->
+        <nav class="hidden md:block">
+          <ul class="flex text-white gap-4 sm:gap-6 text-sm lg:text-base">
+            <li><a href="./shop.html" class="hover:underline">Shop</a></li>
+            <li><a href="#" class="hover:underline">Collections</a></li>
+            <li><a href="#" class="hover:underline">Weekly Deals</a></li>
+            <li><a href="#" class="hover:underline">Gift Sets</a></li>
+            <li><a href="#" class="hover:underline">Contact</a></li>
+          </ul>
+        </nav>
+
+        <!-- Icons -->
+        <div
+          class="text-white text-xl hidden md:flex sm:text-2xl gap-4 sm:gap-5"
+        >
+          <i class="fa-regular fa-heart cursor-pointer hover:text-gray-400"></i>
+          <i class="fa-regular fa-user cursor-pointer hover:text-gray-400"></i>
+          <i
+            class="fa-solid fa-cart-plus cursor-pointer hover:text-gray-400"
+          ></i>
+          <i
+            class="fa-solid fa-magnifying-glass cursor-pointer hover:text-gray-400"
+          ></i>
+        </div>
+
+        <!-- Mobile Menu Toggle -->
+        <button id="menu-toggle" class="block md:hidden text-white text-2xl">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+      </div>
+
+      <!-- Mobile Drawer -->
+      <div
+        id="mobile-drawer"
+        class="fixed top-0 left-0 w-3/4 max-w-sm h-full bg-black text-white transform -translate-x-full transition-transform duration-300 z-50"
+      >
+        <div class="px-5 py-12 flex flex-col gap-6">
+          <!-- Drawer Logo -->
+          <img class="w-32" src="./assets/images/logo/logo.png" alt="Logo" />
+
+          <!-- Search Bar -->
+          <div class="flex items-center bg-gray-800 rounded-lg px-3 py-2">
+            <i class="fa-solid fa-magnifying-glass text-gray-400 mr-3"></i>
+            <input
+              type="text"
+              placeholder="Search..."
+              class="w-full bg-transparent text-white placeholder-gray-400 outline-none"
+            />
+          </div>
+
+          <!-- Navigation Links -->
+          <ul class="flex flex-col gap-4 text-sm">
+            <li><a href="#" class="hover:underline">Shop</a></li>
+            <li><a href="#" class="hover:underline">Collections</a></li>
+            <li><a href="#" class="hover:underline">Weekly Deals</a></li>
+            <li><a href="#" class="hover:underline">Gift Sets</a></li>
+            <li><a href="#" class="hover:underline">Contact</a></li>
+          </ul>
+
+          <!-- Icons -->
+          <div class="flex gap-4 text-xl">
+            <i
+              class="fa-regular fa-heart cursor-pointer hover:text-gray-400"
+            ></i>
+            <i
+              class="fa-regular fa-user cursor-pointer hover:text-gray-400"
+            ></i>
+            <i
+              class="fa-solid fa-cart-plus cursor-pointer hover:text-gray-400"
+            ></i>
+          </div>
+        </div>
+      </div>
+
+      <!-- Overlay -->
+      <div
+        id="drawer-overlay"
+        class="fixed top-0 left-0 w-full h-full bg-black bg-opacity-50 hidden z-40"
+      ></div>
+    </header>
+
+    <main>
+      <section class="flex flex-col">
+        <img
+          src="assets/images/banner/Banner_3200x1000_copy_e24afee5-b1ef-4bce-a8f8-7f3bbd25a5f9.webp"
+          alt=""
+        />
+      </section>
+
+      <section>
+        <div class="sm:text-left mb-8">
+          <h2 class="font-bold text-3xl lg:text-4xl text-gray-800 mt-8 ms-8">
+            Products
+          </h2>
+        </div>
+      </section>
+      <hr class="mb-8" />
+      <main class="container mx-auto px-6 py-10">
+        <!-- Main Grid -->
+        <div class="grid grid-cols-1 lg:grid-cols-4 gap-10">
+          <!-- Filters Section -->
+          <aside class="bg-gray-50 p-6 rounded-xl shadow-lg">
+            <h2 class="text-xl font-bold text-gray-900 mb-6">Filters</h2>
+
+            <!-- Gender Filter -->
+            <div class="mb-6">
+              <h3
+                class="text-lg font-semibold text-gray-900 mb-4 flex items-center"
+              >
+                Gender
+                <span class="ml-2">&#9662;</span>
+              </h3>
+              <div class="flex flex-col space-y-3">
+                <label class="flex items-center text-gray-700">
+                  <input type="checkbox" class="mr-2" value="Man" />
+                  Man 
+                </label>
+                <label class="flex items-center text-gray-700">
+                  <input type="checkbox" class="mr-2" value="Women"/>
+                  Women 
+                </label>
+              </div>
+            </div>
+
+            <!-- Genre Filter -->
+            <div class="mb-6">
+              <h3
+                class="text-lg font-semibold text-gray-900 mb-4 flex items-center"
+              >
+                Genre
+                <span class="ml-2">&#9662;</span>
+              </h3>
+              <div class="flex flex-col space-y-3">
+                <label class="flex items-center text-gray-700">
+                  <input type="checkbox" class="mr-2" value="Eastern"/>
+                  Eastern 
+                </label>
+                <label class="flex items-center text-gray-700">
+                  <input type="checkbox" class="mr-2" value="Wastern"/>
+                  Wastern 
+                </label>
+              </div>
+            </div>
+
+            <!-- Type Filter -->
+            <!-- <div class="mb-6">
+              <h3
+                class="text-lg font-semibold text-gray-900 mb-4 flex items-center"
+              >
+                Type
+                <span class="ml-2">&#9662;</span>
+              </h3>
+              <div class="flex flex-col space-y-3">
+                <label class="flex items-center text-gray-700">
+                  <input type="checkbox" class="mr-2" />
+                  Hardcover
+                </label>
+                <label class="flex items-center text-gray-700">
+                  <input type="checkbox" class="mr-2" />
+                  Paperback
+                </label>
+              </div>
+            </div> -->
+
+            <!-- Season Filter -->
+            <!-- <div class="mb-6">
+              <h3
+                class="text-lg font-semibold text-gray-900 mb-4 flex items-center"
+              >
+                Season
+                <span class="ml-2">&#9662;</span>
+              </h3>
+              <div class="flex flex-col space-y-3">
+                <label class="flex items-center text-gray-700">
+                  <input type="checkbox" class="mr-2" />
+                  Summer
+                </label>
+                <label class="flex items-center text-gray-700">
+                  <input type="checkbox" class="mr-2" />
+                  Winter
+                </label>
+              </div>
+            </div> -->
+          </aside>
+
+        
+          <section class="lg:col-span-3">
+  
+            <!-- Product Section -->
+            <section class="px-0 2xl:px-36 ">
+              <div class="flex flex-col">
+                <!-- Section Header -->
+                <div
+                  class="flex flex-col sm:flex-row justify-between items-center mb-8"
+                >
+                  <!-- Product Count -->
+                  <div class="mb-4 text-gray-700">
+                    <span class="font-semibold" id="counter"></span> 
+                  </div>
+                  <!-- Filter Dropdown -->
+                  <div class="flex items-center gap-4">
+                    <select id="price-filter"
+                      class="px-4 py-2 border-0  rounded-md text-gray-700 focus:border hover:border-gray-600"
+                    >
+                      <option value="featured" hidden>Select Filter</option>
+                      <option value="low-to-high">Price: Low to High</option>
+                      <option value="high-to-low">Price: High to Low</option>
+                    </select>
+                    <!-- Grid/List Toggle -->
+                    <div class="flex items-center gap-2">
+                      <button
+                        class="p-2 border border-gray-300 rounded-md hover:border-gray-400"
+                      >
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          class="h-5 w-5"
+                          fill="currentColor"
+                          viewBox="0 0 20 20"
+                        >
+                          <path
+                            d="M3 4a1 1 0 011-1h3a1 1 0 011 1v3a1 1 0 01-1 1H4a1 1 0 01-1-1V4zm0 8a1 1 0 011-1h3a1 1 0 011 1v3a1 1 0 01-1 1H4a1 1 0 01-1-1v-3zm8-8a1 1 0 011-1h3a1 1 0 011 1v3a1 1 0 01-1 1h-3a1 1 0 01-1-1V4zm0 8a1 1 0 011-1h3a1 1 0 011 1v3a1 1 0 01-1 1h-3a1 1 0 01-1-1v-3z"
+                          />
+                        </svg>
+                      </button>
+                      <button
+                        class="p-2 border border-gray-300 rounded-md hover:border-gray-400"
+                      >
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          class="h-5 w-5"
+                          fill="currentColor"
+                          viewBox="0 0 20 20"
+                        >
+                          <path
+                            d="M3 4a1 1 0 011-1h10a1 1 0 011 1v2a1 1 0 01-1 1H4a1 1 0 01-1-1V4zm0 8a1 1 0 011-1h10a1 1 0 011 1v2a1 1 0 01-1 1H4a1 1 0 01-1-1v-2z"
+                          />
+                        </svg>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- filter section after click -->
+                <div
+                  class="flex flex-col sm:flex-row gap-2 items-center mb-4" id="filter-box">
+               
+                    <!-- <div class="flex items-center bg-red-700 text-white rounded-full hover:bg-red-800 cursor-pointer py-2 px-4">
+                      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-5 h-5 mr-2">
+                          <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+                      </svg>
+                      <span>Man</span>
+                  </div> -->
+                  
+                </div>
+
+                <!-- Product Grid -->
+                <div id="product-grid" 
+                  class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6"
+                >
+                  <!-- Card 1 -->
+                  <!-- <div  class="bg-white shadow-md rounded-lg overflow-hidden"> -->
+                    <!-- <img
+                      src="assets/images/perfums/10th.webp"
+                      alt="Product Image"
+                      class="w-full"
+                    />
+                    <div class="p-4">
+                      <h3 class="text-lg font-semibold text-gray-800">Iqbal</h3>
+                      <p class="text-gray-600 text-sm">The Poet's Fragrance</p>
+                      <p class="mt-2 text-red-500 font-bold">Rs.4,290</p>
+                    </div> -->
+                  <!-- </div> -->
+                 
+                </div>
+
+                <!-- Pagination ..........................-->
+                <section id="pagination" class="flex items-center justify-center space-x-2 text-gray-600 mt-8 gap-3">
+                   
+              </section>
+              </div>
+            </section>
+
+            <section class="2xl:px-36 my-20">
+              <div class="min-h-screen flex flex-col my-10 gap-10">
+                <div class="flex flex-col gap-10">
+                  <h1 class="font-bold text-4xl">
+                    No.#1 Online Store For Best Perfumes In Pakistan
+                  </h1>
+                  <p class="">
+                    Scents N Stories is the first online perfume store in
+                    Pakistan selling the highest quality of fragrances. We
+                    realized that most international branded perfumes are
+                    extremely expensive for people to buy because of the high
+                    exchange rate. Our idea was to sell the same quality of
+                    perfumes in Pakistan at much lower prices. Our research
+                    revealed that most customers buy fragrances based on the
+                    bottle styles as opposed to the perfume quality. Scents’n
+                    Stories wanted to sell the best perfumes in Pakistan which
+                    meant focusing on the perfume juice. To keep our prices
+                    affordable we had to keep our packaging and advertising
+                    costs very low. We used standard packaging for every
+                    fragrance. Buying perfumes in Pakistan is usually a hassle
+                    because very little information is given about the
+                    fragrances. Perfume online shopping is not only convenient
+                    because you can receive the perfume in the comfort of your
+                    home but it is also beneficial because one can get all the
+                    required information in order to buy the best perfumes in
+                    Pakistan. We have easy-to-use filters on our website which
+                    curate perfumes which will be the best fit for you! Most
+                    perfumes in Pakistan are imported. We, at Scents’n Stories,
+                    wanted to localize the manufacturing process to improve the
+                    local economy of Pakistan. Our aim for the future is to gain
+                    such high expertise that we can localize the entire
+                    manufacturing process and create original scents alongside
+                    impressions of branded perfumes. Having a high level of
+                    proficiency and experience within the industry will enable
+                    us to create the best perfumes in Pakistan. Being an
+                    e-commerce company, we will be able to deliver these
+                    perfumes in Pakistan to our customers in a very short time.
+                    Alongside this, we try our best to give the best customer
+                    service we possibly can so that buying perfumes online
+                    becomes a delight for them.
+                  </p>
+                </div>
+              </div>
+            </section>
+          </section>
+        </div>
+      </main>
+
+      <section class="px-6 xl:px-16 2xl:px-36 my-20">
+        <div class="flex flex-col sm:flex-row gap-10 justify-center">
+          <!-- Card 1 -->
+          <div
+            class="card flex flex-col items-center rounded-3xl p-5 bg-white shadow-lg"
+          >
+            <div class="flex justify-center mb-4">
+              <img
+                src="assets/images/perfums/37th.webp"
+                class="w-80 rounded-t-full"
+                alt=""
+              />
+            </div>
+            <div class="flex flex-col items-center text-center gap-3">
+              <h1 class="font-bold text-xl text-gray-800">WEEKLY DEALS</h1>
+              <p class="text-gray-600">
+                Get the best fragrances in town at discounted prices & not miss
+                a single update with these Deals.
+              </p>
+              <button class="p-4 bg-black text-white font-bold rounded-full">
+                Get Yours
+              </button>
+            </div>
+          </div>
+
+          <!-- Card 2 -->
+          <div
+            class="card flex flex-col items-center rounded-3xl p-5 bg-[#c4c3c3] shadow-lg"
+          >
+            <div class="flex justify-center mb-4">
+              <img
+                src="assets/images/perfums/38th.webp"
+                class="w-80 rounded-t-full"
+                alt=""
+              />
+            </div>
+            <div class="flex flex-col items-center text-center gap-3">
+              <h1 class="font-bold text-2xl text-white">
+                Famous Perfume DNA's
+              </h1>
+              <p class="text-white">
+                Looking for famous perfume DNAs? Find which of your favorite
+                scents are similar to!
+              </p>
+              <button
+                class="p-4 bg-white text-[#c4c3c3] font-bold rounded-full"
+              >
+                Read More
+              </button>
+            </div>
+          </div>
+
+          <!-- Card 3 -->
+          <div
+            class="card flex flex-col items-center rounded-3xl p-5 bg-white shadow-lg"
+          >
+            <div class="flex justify-center mb-4">
+              <img
+                src="assets/images/perfums/39th.webp"
+                class="w-80 rounded-t-full"
+                alt=""
+              />
+            </div>
+            <div class="flex flex-col items-center text-center gap-3">
+              <h1 class="font-bold text-xl text-gray-800">
+                Best Attar Fragrances
+              </h1>
+              <p class="text-gray-600">
+                You are an absolute Attar fan? Then you'll love these attar
+                fragrances for sure, so don’t miss!
+              </p>
+              <button class="p-4 bg-black text-white font-bold rounded-full">
+                Read More
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="bg-black text-white px-6 xl:px-16 2xl:px-36 pt-20">
+      <div
+        class="container mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-8"
+      >
+        <!-- Logo and Branding -->
+        <div class="text-center sm:text-left">
+          <img
+            src="./assets/images/logo/patner-logo.png"
+            alt="Quetta Gladiators Logo"
+            class="mx-auto sm:mx-0 mb-4"
+          />
+        </div>
+        <!-- About -->
+        <div>
+          <h3 class="font-bold mb-4">ABOUT</h3>
+          <ul class="space-y-2">
+            <li><a href="#" class="hover:underline">FAQs</a></li>
+            <li><a href="#" class="hover:underline">Our Story</a></li>
+            <li><a href="#" class="hover:underline">Media Page</a></li>
+            <li><a href="#" class="hover:underline">Quiz</a></li>
+            <li><a href="#" class="hover:underline">Our New Logo</a></li>
+            <li><a href="#" class="hover:underline">Careers / Jobs</a></li>
+            <li>
+              <a href="#" class="hover:underline">Accessibility Statement</a>
+            </li>
+          </ul>
+        </div>
+        <!-- Support -->
+        <div>
+          <h3 class="font-bold mb-4">SUPPORT</h3>
+          <ul class="space-y-2">
+            <li><a href="#" class="hover:underline">Return Form</a></li>
+            <li><a href="#" class="hover:underline">Privacy Policy</a></li>
+            <li><a href="#" class="hover:underline">Shipping Policy</a></li>
+            <li><a href="#" class="hover:underline">Terms of Service</a></li>
+            <li><a href="#" class="hover:underline">Track Your Order</a></li>
+          </ul>
+        </div>
+        <!-- Quick Links -->
+        <div>
+          <h3 class="font-bold mb-4">QUICK LINKS</h3>
+          <ul class="space-y-2">
+            <li><a href="#" class="hover:underline">Gold Membership</a></li>
+            <li><a href="#" class="hover:underline">Ask For A Perfume</a></li>
+            <li>
+              <a href="#" class="hover:underline">Bulk / Customize Orders</a>
+            </li>
+            <li><a href="#" class="hover:underline">Own a Franchise</a></li>
+            <li><a href="#" class="hover:underline">Store Locator</a></li>
+          </ul>
+        </div>
+        <!-- Get in Touch -->
+        <div>
+          <h3 class="font-bold mb-4">GET IN TOUCH</h3>
+          <ul class="space-y-2">
+            <li>
+              <i class="fa-solid fa-phone"></i>
+              <a href="tel:+923111007862" class="hover:underline"
+                >+92 311 100 7862</a
+              >
+            </li>
+            <li>
+              <i class="fa-regular fa-envelope"></i>
+              <a href="mailto:example@example.com" class="hover:underline"
+                >Email us</a
+              >
+            </li>
+          </ul>
+          <div class="flex mt-4 flex-col">
+            <h3 class="uppercase">Follow us</h3>
+            <div>
+              <a href="#" class="hover:text-gray-400"
+                ><i class="fab fa-instagram"></i
+              ></a>
+              <a href="#" class="hover:text-gray-400"
+                ><i class="fab fa-facebook"></i
+              ></a>
+              <a href="#" class="hover:text-gray-400"
+                ><i class="fab fa-youtube"></i
+              ></a>
+              <a href="#" class="hover:text-gray-400"
+                ><i class="fab fa-twitter"></i
+              ></a>
+              <a href="#" class="hover:text-gray-400"
+                ><i class="fab fa-snapchat"></i
+              ></a>
+              <a href="#" class="hover:text-gray-400"
+                ><i class="fab fa-tiktok"></i
+              ></a>
+              <a href="#" class="hover:text-gray-400"
+                ><i class="fab fa-linkedin"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container mx-auto mt-8 border-t border-gray-600 py-6">
+        <div class="flex justify-center text-center text-gray-50">
+          <!-- Website Name -->
+          <span class="font-semibold"
+            >Scent Aura &copy; 2025. All Rights Reserved.</span
+          >
+        </div>
+      </div>
+    </footer>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script type="module" src="./assets/js/main.js"></script>
+  </body>
+</html>
