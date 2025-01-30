@@ -66,8 +66,8 @@ const showProduct = () => {
 
   paginatedItems.forEach((val) => {
     product.innerHTML += `
-      <div class="bg-white shadow-md rounded-lg overflow-hidden">
-        <img src="${val.imgUrl}" alt="Product Image" class="w-full" />
+      <div class="relative bg-white shadow-md rounded-lg group">
+        <img src="${val.imgUrl}" alt="Product Image" class="w-full rounded-tr-lg rounded-tl-lg" />
         <div class="p-4">
           <h3 class="text-lg font-semibold text-gray-800">${val.Name}</h3>
           <p class="text-gray-600 text-sm">${val.Description.slice(
@@ -76,6 +76,17 @@ const showProduct = () => {
           )}...</p>
           <p class="mt-2 text-red-500 font-bold">${val.Price}</p>
         </div>
+
+        <div
+                        class="flex-col flex gap-2 absolute -right-8 -top-4 transition-all duration-300 transform opacity-0 group-hover:opacity-100 group-hover:-translate-y-4 group-hover:-right-4 group-hover:-top-0 group-hover:flex"
+                      >
+                        <div class="bg-red-700 text-white w-10 h-10 rounded-full flex items-center justify-center cursor-pointer">
+                          <i class="fa-solid fa-plus"></i>
+                        </div>
+                        <div class="bg-red-700 text-white w-10 h-10 rounded-full flex items-center justify-center cursor-pointer">
+                          <i class="fa-solid fa-magnifying-glass"></i>
+                        </div>
+                      </div>
       </div>`;
   });
 
