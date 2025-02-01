@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="assets/css/style.css" />
     <link
       rel="stylesheet"
@@ -39,11 +40,13 @@
       <!-- Header -->
       <div class="py-6 flex items-center justify-between">
         <!-- Logo -->
-        <img
-          class="w-32 sm:w-40 lg:w-52"
-          src="./assets/images/logo/logo.png"
-          alt="Logo"
-        />
+        <a href="/">
+          <img
+            class="w-32 sm:w-40 lg:w-52"
+            src="./assets/images/logo/logo.png"
+            alt="Logo"
+          />
+        </a>
 
         <!-- Navigation (Hidden on Mobile) -->
         <nav class="hidden md:block">
@@ -58,10 +61,14 @@
 
         <!-- Icons -->
         <div
-          class="text-white text-xl hidden md:flex sm:text-2xl gap-4 sm:gap-5"
+          class="text-white text-xl hidden md:flex md:items-center sm:text-2xl gap-4 sm:gap-5 z-50"
         >
           <i class="fa-regular fa-heart cursor-pointer hover:text-gray-400"></i>
-          <i class="fa-regular fa-user cursor-pointer hover:text-gray-400"></i>
+          <a href="/signin.html">
+            <i
+              class="fa-regular fa-user cursor-pointer hover:text-gray-400"
+            ></i>
+          </a>
           <i
             class="fa-solid fa-cart-plus cursor-pointer hover:text-gray-400"
           ></i>
@@ -83,7 +90,9 @@
       >
         <div class="px-5 py-12 flex flex-col gap-6">
           <!-- Drawer Logo -->
-          <img class="w-32" src="./assets/images/logo/logo.png" alt="Logo" />
+           <a href="/">
+            <img class="w-32" src="./assets/images/logo/logo.png" alt="Logo" />
+           </a>
 
           <!-- Search Bar -->
           <div class="flex items-center bg-gray-800 rounded-lg px-3 py-2">
@@ -97,7 +106,7 @@
 
           <!-- Navigation Links -->
           <ul class="flex flex-col gap-4 text-sm">
-            <li><a href="#" class="hover:underline">Shop</a></li>
+            <li><a href="./shop.html" class="hover:underline">Shop</a></li>
             <li><a href="#" class="hover:underline">Collections</a></li>
             <li><a href="#" class="hover:underline">Weekly Deals</a></li>
             <li><a href="#" class="hover:underline">Gift Sets</a></li>
@@ -105,13 +114,15 @@
           </ul>
 
           <!-- Icons -->
-          <div class="flex gap-4 text-xl">
+          <div class="flex gap-4 text-xl items-center">
             <i
               class="fa-regular fa-heart cursor-pointer hover:text-gray-400"
             ></i>
-            <i
-              class="fa-regular fa-user cursor-pointer hover:text-gray-400"
-            ></i>
+            <a href="/signin.html">
+              <i
+                class="fa-regular fa-user cursor-pointer hover:text-gray-400"
+              ></i>
+            </a>
             <i
               class="fa-solid fa-cart-plus cursor-pointer hover:text-gray-400"
             ></i>
@@ -160,11 +171,11 @@
               <div class="flex flex-col space-y-3">
                 <label class="flex items-center text-gray-700">
                   <input type="checkbox" class="mr-2" value="Man" />
-                  Man 
+                  Man
                 </label>
                 <label class="flex items-center text-gray-700">
-                  <input type="checkbox" class="mr-2" value="Women"/>
-                  Women 
+                  <input type="checkbox" class="mr-2" value="Women" />
+                  Women
                 </label>
               </div>
             </div>
@@ -179,12 +190,12 @@
               </h3>
               <div class="flex flex-col space-y-3">
                 <label class="flex items-center text-gray-700">
-                  <input type="checkbox" class="mr-2" value="Eastern"/>
-                  Eastern 
+                  <input type="checkbox" class="mr-2" value="Eastern" />
+                  Eastern
                 </label>
                 <label class="flex items-center text-gray-700">
-                  <input type="checkbox" class="mr-2" value="Wastern"/>
-                  Wastern 
+                  <input type="checkbox" class="mr-2" value="Wastern" />
+                  Wastern
                 </label>
               </div>
             </div>
@@ -230,11 +241,9 @@
             </div> -->
           </aside>
 
-        
           <section class="lg:col-span-3 overflow-hidden">
-  
             <!-- Product Section -->
-            <section class="px-0 2xl:px-36 ">
+            <section class="px-0 2xl:px-36">
               <div class="flex flex-col">
                 <!-- Section Header -->
                 <div
@@ -242,12 +251,13 @@
                 >
                   <!-- Product Count -->
                   <div class="mb-4 text-gray-700">
-                    <span class="font-semibold" id="counter"></span> 
+                    <span class="font-semibold" id="counter"></span>
                   </div>
                   <!-- Filter Dropdown -->
                   <div class="flex items-center gap-4">
-                    <select id="price-filter"
-                      class="px-4 py-2 border-0  rounded-md text-gray-700 focus:border hover:border-gray-600"
+                    <select
+                      id="price-filter"
+                      class="px-4 py-2 border-0 rounded-md text-gray-700 focus:border hover:border-gray-600"
                     >
                       <option value="featured" hidden>Select Filter</option>
                       <option value="low-to-high">Price: Low to High</option>
@@ -289,24 +299,25 @@
 
                 <!-- filter section after click -->
                 <div
-                  class="flex flex-col sm:flex-row gap-2 items-center mb-4" id="filter-box">
-               
-                    <!-- <div class="flex items-center bg-red-700 text-white rounded-full hover:bg-red-800 cursor-pointer py-2 px-4">
+                  class="flex flex-col sm:flex-row gap-2 items-center mb-4"
+                  id="filter-box"
+                >
+                  <!-- <div class="flex items-center bg-red-700 text-white rounded-full hover:bg-red-800 cursor-pointer py-2 px-4">
                       <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-5 h-5 mr-2">
                           <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
                       </svg>
                       <span>Man</span>
                   </div> -->
-                  
                 </div>
 
                 <!-- Product Grid -->
-                <div id="product-grid" 
+                <div
+                  id="product-grid"
                   class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6"
                 >
                   <!-- Card 1 -->
                   <!-- <div  class="bg-white shadow-md rounded-lg overflow-hidden"> -->
-                    <!-- <img
+                  <!-- <img
                       src="assets/images/perfums/10th.webp"
                       alt="Product Image"
                       class="w-full"
@@ -317,13 +328,13 @@
                       <p class="mt-2 text-red-500 font-bold">Rs.4,290</p>
                     </div> -->
                   <!-- </div> -->
-                 
                 </div>
 
                 <!-- Pagination ..........................-->
-                <section id="pagination" class="flex items-center justify-center space-x-2 text-gray-600 mt-8 gap-3">
-                   
-              </section>
+                <section
+                  id="pagination"
+                  class="flex items-center justify-center space-x-2 text-gray-600 mt-8 gap-3"
+                ></section>
               </div>
             </section>
 
@@ -561,7 +572,6 @@
       </div>
     </footer>
 
-    <script src="https://cdn.tailwindcss.com"></script>
     <script type="module" src="./assets/js/main.js"></script>
   </body>
 </html>

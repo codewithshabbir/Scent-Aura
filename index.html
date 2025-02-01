@@ -40,11 +40,13 @@
       <!-- Header -->
       <div class="py-6 flex items-center justify-between">
         <!-- Logo -->
-        <img
-          class="w-32 sm:w-40 lg:w-52"
-          src="./assets/images/logo/logo.png"
-          alt="Logo"
-        />
+        <a href="/">
+          <img
+            class="w-32 sm:w-40 lg:w-52"
+            src="./assets/images/logo/logo.png"
+            alt="Logo"
+          />
+        </a>
 
         <!-- Navigation (Hidden on Mobile) -->
         <nav class="hidden md:block">
@@ -59,10 +61,14 @@
 
         <!-- Icons -->
         <div
-          class="text-white text-xl hidden md:flex sm:text-2xl gap-4 sm:gap-5"
+          class="text-white text-xl hidden md:flex md:items-center sm:text-2xl gap-4 sm:gap-5"
         >
           <i class="fa-regular fa-heart cursor-pointer hover:text-gray-400"></i>
-          <i class="fa-regular fa-user cursor-pointer hover:text-gray-400"></i>
+          <a href="/signin.html">
+            <i
+              class="fa-regular fa-user cursor-pointer hover:text-gray-400"
+            ></i>
+          </a>
           <i
             class="fa-solid fa-cart-plus cursor-pointer hover:text-gray-400"
           ></i>
@@ -84,7 +90,9 @@
       >
         <div class="px-5 py-12 flex flex-col gap-6">
           <!-- Drawer Logo -->
-          <img class="w-32" src="./assets/images/logo/logo.png" alt="Logo" />
+           <a href="/">
+            <img class="w-32" src="./assets/images/logo/logo.png" alt="Logo" />
+           </a>
 
           <!-- Search Bar -->
           <div class="flex items-center bg-gray-800 rounded-lg px-3 py-2">
@@ -106,13 +114,15 @@
           </ul>
 
           <!-- Icons -->
-          <div class="flex gap-4 text-xl">
+          <div class="flex gap-4 text-xl items-center">
             <i
               class="fa-regular fa-heart cursor-pointer hover:text-gray-400"
             ></i>
-            <i
-              class="fa-regular fa-user cursor-pointer hover:text-gray-400"
-            ></i>
+            <a href="/signin.html">
+              <i
+                class="fa-regular fa-user cursor-pointer hover:text-gray-400"
+              ></i>
+            </a>
             <i
               class="fa-solid fa-cart-plus cursor-pointer hover:text-gray-400"
             ></i>
@@ -144,7 +154,7 @@
               Our Best Sellers
             </h2>
             <a
-              href="#"
+              href="/shop.html"
               class="mt-4 sm:mt-0 text-red-600 hover:text-red-700 underline"
               >View All</a
             >
@@ -307,7 +317,7 @@
             class="flex flex-col sm:flex-row justify-between items-center text-center sm:text-left mb-8"
           >
             <h1 class="font-bold text-4xl">New Arrival</h1>
-            <a href="" class="hover:text-red-600 underline">veiw all</a>
+            <a href="/shop.html" class="hover:text-red-600 underline">View All</a>
           </div>
           <!-- Product Grid -->
           <div
@@ -448,7 +458,7 @@
             class="flex flex-col sm:flex-row justify-between items-center text-center sm:text-left mb-8"
           >
             <h1 class="font-bold text-4xl">WEEKLY DEALS</h1>
-            <a href="" class="hover:text-red-600 underline">veiw all</a>
+            <a href="/shop.html" class="hover:text-red-600 underline">View All</a>
           </div>
           <!-- Product Grid -->
           <div
@@ -581,7 +591,7 @@
             class="flex flex-col sm:flex-row justify-between items-center text-center sm:text-left mb-8"
           >
             <h1 class="font-bold text-4xl">Attars - Alcohol Free</h1>
-            <a href="" class="hover:text-red-600 underline">veiw all</a>
+            <a href="/shop.html" class="hover:text-red-600 underline">View All</a>
           </div>
           <!-- Product Grid -->
           <div

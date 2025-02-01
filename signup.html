@@ -12,7 +12,7 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <title>Scent Aura</title>
+    <title>Sign Up</title>
   </head>
   <body>
     <header
@@ -138,73 +138,77 @@
     </header>
 
     <main class="px-6 xl:px-16 2xl:px-36 my-20">
-      <div
-        id="product-details"
-        class="flex flex-col md:flex-row gap-8 bg-white rounded-lg"
-      ></div>
-      <div class="accordion max-w-md mx-auto mt-10 space-y-4">
-        <!-- Accordion Item 1 -->
-        <div
-          class="accordion-item bg-white rounded-lg shadow-md overflow-hidden"
-        >
-          <!-- Accordion Header -->
-          <button
-            class="accordion-header w-full text-left p-4 bg-gray-100 hover:bg-gray-200 transition-colors flex justify-between items-center"
-          >
-            <span class="font-semibold text-gray-800">Section 1</span>
-            <svg
-              class="w-5 h-5 transform transition-transform"
-              fill="none"
-              stroke="currentColor"
-              viewBox="0 0 24 24"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="2"
-                d="M19 9l-7 7-7-7"
-              ></path>
-            </svg>
-          </button>
-          <!-- Accordion Content -->
-          <div class="accordion-content p-4 text-gray-700 hidden">
-            This is the content for section 1. It will be shown when the header
-            is clicked.
-          </div>
-        </div>
-
-        <!-- Accordion Item 2 -->
-        <div
-          class="accordion-item bg-white rounded-lg shadow-md overflow-hidden"
-        >
-          <!-- Accordion Header -->
-          <button
-            class="accordion-header w-full text-left p-4 bg-gray-100 hover:bg-gray-200 transition-colors flex justify-between items-center"
-          >
-            <span class="font-semibold text-gray-800">Section 2</span>
-            <svg
-              class="w-5 h-5 transform transition-transform"
-              fill="none"
-              stroke="currentColor"
-              viewBox="0 0 24 24"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="2"
-                d="M19 9l-7 7-7-7"
-              ></path>
-            </svg>
-          </button>
-          <!-- Accordion Content -->
-          <div class="accordion-content p-4 text-gray-700 hidden">
-            This is the content for section 2. It will be shown when the header
-            is clicked.
-          </div>
-        </div>
-      </div>
+        <section class="max-w-md mx-auto p-6 bg-white shadow-lg rounded-lg">
+            <h1 class="text-3xl font-bold uppercase text-gray-900 mb-6 text-center">
+                Create Account
+            </h1>
+        
+            <form method="post" class="space-y-4">
+                <!-- First Name -->
+                <div>
+                    <label for="firstName" class="block text-sm font-bold text-gray-700 mb-2">
+                        First Name
+                    </label>
+                    <input
+                        type="text"
+                        name="firstName"
+                        id="firstName"
+                        class="w-full border border-gray-300 px-4 py-2 rounded-lg focus:ring focus:ring-blue-300"
+                        required
+                    />
+                </div>
+        
+                <!-- Last Name -->
+                <div>
+                    <label for="lastName" class="block text-sm font-bold text-gray-700 mb-2">
+                        Last Name
+                    </label>
+                    <input
+                        type="text"
+                        name="lastName"
+                        id="lastName"
+                        class="w-full border border-gray-300 px-4 py-2 rounded-lg focus:ring focus:ring-blue-300"
+                        required
+                    />
+                </div>
+        
+                <!-- Email -->
+                <div>
+                    <label for="CustomerEmail" class="block text-sm font-bold text-gray-700 mb-2">
+                        Email
+                    </label>
+                    <input
+                        type="email"
+                        name="customer[email]"
+                        id="CustomerEmail"
+                        class="w-full border border-gray-300 px-4 py-2 rounded-lg focus:ring focus:ring-blue-300"
+                        required
+                    />
+                </div>
+        
+                <!-- Password -->
+                <div>
+                    <label for="Password" class="block text-sm font-bold text-gray-700 mb-2">
+                        Password
+                    </label>
+                    <input
+                        type="password"
+                        name="Password"
+                        id="Password"
+                        class="w-full border border-gray-300 px-4 py-2 rounded-lg focus:ring focus:ring-blue-300"
+                        required
+                    />
+                </div>
+        
+                <!-- Submit Button -->
+                <button
+                    type="submit"
+                    class="w-full bg-red-600 text-white font-bold py-2 rounded-lg hover:bg-red-700 transition duration-300"
+                >
+                    Create
+                </button>
+            </form>
+        </section>        
     </main>
 
     <footer class="bg-black text-white px-6 xl:px-16 2xl:px-36 pt-20">
@@ -313,6 +317,6 @@
       </div>
     </footer>
 
-    <script src="./assets/js/main.js" type="module"></script>
+    <script type="module" src="./assets/js/main.js"></script>
   </body>
 </html>
