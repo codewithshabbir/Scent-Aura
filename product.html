@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>Scent Aura</title>
+  </head>
+  <body>
+    <header
+      id="main-header"
+      class="bg-black px-6 xl:px-16 z-50 2xl:px-36 w-full transition-all duration-100"
+    >
+      <!-- Top Bar -->
+      <div
+        class="relative w-full py-6 flex items-center justify-center text-white"
+      >
+        <span
+          id="top-bar-slide-1"
+          class="absolute transition-opacity duration-500 opacity-100"
+        >
+          Delivery all over Pakistan
+        </span>
+        <span
+          id="top-bar-slide-2"
+          class="absolute transition-opacity duration-500 opacity-0"
+        >
+          Free shipping on order above Rs. 3000
+        </span>
+      </div>
+      <hr />
+      <!-- Header -->
+      <div class="py-6 flex items-center justify-between">
+        <!-- Logo -->
+        <img
+          class="w-32 sm:w-40 lg:w-52"
+          src="./assets/images/logo/logo.png"
+          alt="Logo"
+        />
+
+        <!-- Navigation (Hidden on Mobile) -->
+        <nav class="hidden md:block">
+          <ul class="flex text-white gap-4 sm:gap-6 text-sm lg:text-base">
+            <li><a href="./shop.html" class="hover:underline">Shop</a></li>
+            <li><a href="#" class="hover:underline">Collections</a></li>
+            <li><a href="#" class="hover:underline">Weekly Deals</a></li>
+            <li><a href="#" class="hover:underline">Gift Sets</a></li>
+            <li><a href="#" class="hover:underline">Contact</a></li>
+          </ul>
+        </nav>
+
+        <!-- Icons -->
+        <div
+          class="text-white text-xl hidden md:flex sm:text-2xl gap-4 sm:gap-5"
+        >
+          <i class="fa-regular fa-heart cursor-pointer hover:text-gray-400"></i>
+          <i class="fa-regular fa-user cursor-pointer hover:text-gray-400"></i>
+          <i
+            class="fa-solid fa-cart-plus cursor-pointer hover:text-gray-400"
+          ></i>
+          <i
+            class="fa-solid fa-magnifying-glass cursor-pointer hover:text-gray-400"
+          ></i>
+        </div>
+
+        <!-- Mobile Menu Toggle -->
+        <button id="menu-toggle" class="block md:hidden text-white text-2xl">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+      </div>
+
+      <!-- Mobile Drawer -->
+      <div
+        id="mobile-drawer"
+        class="fixed top-0 left-0 w-3/4 max-w-sm h-full bg-black text-white transform -translate-x-full transition-transform duration-300 z-50"
+      >
+        <div class="px-5 py-12 flex flex-col gap-6">
+          <!-- Drawer Logo -->
+          <img class="w-32" src="./assets/images/logo/logo.png" alt="Logo" />
+
+          <!-- Search Bar -->
+          <div class="flex items-center bg-gray-800 rounded-lg px-3 py-2">
+            <i class="fa-solid fa-magnifying-glass text-gray-400 mr-3"></i>
+            <input
+              type="text"
+              placeholder="Search..."
+              class="w-full bg-transparent text-white placeholder-gray-400 outline-none"
+            />
+          </div>
+
+          <!-- Navigation Links -->
+          <ul class="flex flex-col gap-4 text-sm">
+            <li><a href="./shop.html" class="hover:underline">Shop</a></li>
+            <li><a href="#" class="hover:underline">Collections</a></li>
+            <li><a href="#" class="hover:underline">Weekly Deals</a></li>
+            <li><a href="#" class="hover:underline">Gift Sets</a></li>
+            <li><a href="#" class="hover:underline">Contact</a></li>
+          </ul>
+
+          <!-- Icons -->
+          <div class="flex gap-4 text-xl">
+            <i
+              class="fa-regular fa-heart cursor-pointer hover:text-gray-400"
+            ></i>
+            <i
+              class="fa-regular fa-user cursor-pointer hover:text-gray-400"
+            ></i>
+            <i
+              class="fa-solid fa-cart-plus cursor-pointer hover:text-gray-400"
+            ></i>
+          </div>
+        </div>
+      </div>
+
+      <!-- Overlay -->
+      <div
+        id="drawer-overlay"
+        class="fixed top-0 left-0 w-full h-full bg-black bg-opacity-50 hidden z-40"
+      ></div>
+    </header>
+
+    <main class="px-6 xl:px-16 2xl:px-36 my-20">
+        <div id="product-details" class="flex flex-col md:flex-row gap-8 bg-white rounded-lg">
+           
+        </div>
+        <div class="accordion max-w-md mx-auto mt-10 space-y-4">
+            <!-- Accordion Item 1 -->
+            <div class="accordion-item bg-white rounded-lg shadow-md overflow-hidden">
+                <!-- Accordion Header -->
+                <button class="accordion-header w-full text-left p-4 bg-gray-100 hover:bg-gray-200 transition-colors flex justify-between items-center">
+                    <span class="font-semibold text-gray-800">Section 1</span>
+                    <svg class="w-5 h-5 transform transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                    </svg>
+                </button>
+                <!-- Accordion Content -->
+                <div class="accordion-content p-4 text-gray-700 hidden">
+                    This is the content for section 1. It will be shown when the header is clicked.
+                </div>
+            </div>
+        
+            <!-- Accordion Item 2 -->
+            <div class="accordion-item bg-white rounded-lg shadow-md overflow-hidden">
+                <!-- Accordion Header -->
+                <button class="accordion-header w-full text-left p-4 bg-gray-100 hover:bg-gray-200 transition-colors flex justify-between items-center">
+                    <span class="font-semibold text-gray-800">Section 2</span>
+                    <svg class="w-5 h-5 transform transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                    </svg>
+                </button>
+                <!-- Accordion Content -->
+                <div class="accordion-content p-4 text-gray-700 hidden">
+                    This is the content for section 2. It will be shown when the header is clicked.
+                </div>
+            </div>
+        </div>
+        
+    </main>
+
+    <footer class="bg-black text-white px-6 xl:px-16 2xl:px-36 pt-20">
+      <div
+        class="container mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-8"
+      >
+        <!-- Logo and Branding -->
+        <div class="text-center sm:text-left">
+          <img
+            src="./assets/images/logo/patner-logo.png"
+            alt="Quetta Gladiators Logo"
+            class="mx-auto sm:mx-0 mb-4"
+          />
+        </div>
+        <!-- About -->
+        <div>
+          <h3 class="font-bold mb-4">ABOUT</h3>
+          <ul class="space-y-2">
+            <li><a href="#" class="hover:underline">FAQs</a></li>
+            <li><a href="#" class="hover:underline">Our Story</a></li>
+            <li><a href="#" class="hover:underline">Media Page</a></li>
+            <li><a href="#" class="hover:underline">Quiz</a></li>
+            <li><a href="#" class="hover:underline">Our New Logo</a></li>
+            <li><a href="#" class="hover:underline">Careers / Jobs</a></li>
+            <li>
+              <a href="#" class="hover:underline">Accessibility Statement</a>
+            </li>
+          </ul>
+        </div>
+        <!-- Support -->
+        <div>
+          <h3 class="font-bold mb-4">SUPPORT</h3>
+          <ul class="space-y-2">
+            <li><a href="#" class="hover:underline">Return Form</a></li>
+            <li><a href="#" class="hover:underline">Privacy Policy</a></li>
+            <li><a href="#" class="hover:underline">Shipping Policy</a></li>
+            <li><a href="#" class="hover:underline">Terms of Service</a></li>
+            <li><a href="#" class="hover:underline">Track Your Order</a></li>
+          </ul>
+        </div>
+        <!-- Quick Links -->
+        <div>
+          <h3 class="font-bold mb-4">QUICK LINKS</h3>
+          <ul class="space-y-2">
+            <li><a href="#" class="hover:underline">Gold Membership</a></li>
+            <li><a href="#" class="hover:underline">Ask For A Perfume</a></li>
+            <li>
+              <a href="#" class="hover:underline">Bulk / Customize Orders</a>
+            </li>
+            <li><a href="#" class="hover:underline">Own a Franchise</a></li>
+            <li><a href="#" class="hover:underline">Store Locator</a></li>
+          </ul>
+        </div>
+        <!-- Get in Touch -->
+        <div>
+          <h3 class="font-bold mb-4">GET IN TOUCH</h3>
+          <ul class="space-y-2">
+            <li>
+              <i class="fa-solid fa-phone"></i>
+              <a href="tel:+923111007862" class="hover:underline"
+                >+92 311 100 7862</a
+              >
+            </li>
+            <li>
+              <i class="fa-regular fa-envelope"></i>
+              <a href="mailto:example@example.com" class="hover:underline"
+                >Email us</a
+              >
+            </li>
+          </ul>
+          <div class="flex mt-4 flex-col">
+            <h3 class="uppercase">Follow us</h3>
+            <div>
+              <a href="#" class="hover:text-gray-400"
+                ><i class="fab fa-instagram"></i
+              ></a>
+              <a href="#" class="hover:text-gray-400"
+                ><i class="fab fa-facebook"></i
+              ></a>
+              <a href="#" class="hover:text-gray-400"
+                ><i class="fab fa-youtube"></i
+              ></a>
+              <a href="#" class="hover:text-gray-400"
+                ><i class="fab fa-twitter"></i
+              ></a>
+              <a href="#" class="hover:text-gray-400"
+                ><i class="fab fa-snapchat"></i
+              ></a>
+              <a href="#" class="hover:text-gray-400"
+                ><i class="fab fa-tiktok"></i
+              ></a>
+              <a href="#" class="hover:text-gray-400"
+                ><i class="fab fa-linkedin"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container mx-auto mt-8 border-t border-gray-600 py-6">
+        <div class="flex justify-center text-center text-gray-50">
+          <!-- Website Name -->
+          <span class="font-semibold"
+            >Scent Aura &copy; 2025. All Rights Reserved.</span
+          >
+        </div>
+      </div>
+    </footer>
+    <script>
+    </script>
+    <script src="./assets/js/main.js" type="module"></script>
+  </body>
+</html>
